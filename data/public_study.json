@@ -1251,6 +1251,15 @@
         97,
         100
       ]
+    },
+    "tester_private": {
+      "annotator": "tester_private",
+      "task_ids": [
+        1,
+        2,
+        3,
+        4
+      ]
     }
   }
 }
