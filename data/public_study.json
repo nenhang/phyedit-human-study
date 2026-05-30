@@ -3,8 +3,7 @@
     {
       "id": 1,
       "meta": {
-        "case_id": "0007",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0007"
       },
       "image": "panels/task_001_case_0007_pair.jpg",
       "title": "任务 001 | 匿名 A/B 比较",
@@ -13,8 +12,7 @@
     {
       "id": 2,
       "meta": {
-        "case_id": "0007",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0007"
       },
       "image": "panels/task_002_case_0007_pair.jpg",
       "title": "任务 002 | 匿名 A/B 比较",
@@ -23,8 +21,7 @@
     {
       "id": 3,
       "meta": {
-        "case_id": "0021",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0021"
       },
       "image": "panels/task_003_case_0021_pair.jpg",
       "title": "任务 003 | 匿名 A/B 比较",
@@ -33,8 +30,7 @@
     {
       "id": 4,
       "meta": {
-        "case_id": "0021",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0021"
       },
       "image": "panels/task_004_case_0021_pair.jpg",
       "title": "任务 004 | 匿名 A/B 比较",
@@ -43,8 +39,7 @@
     {
       "id": 5,
       "meta": {
-        "case_id": "0024",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0024"
       },
       "image": "panels/task_005_case_0024_pair.jpg",
       "title": "任务 005 | 匿名 A/B 比较",
@@ -53,8 +48,7 @@
     {
       "id": 6,
       "meta": {
-        "case_id": "0024",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0024"
       },
       "image": "panels/task_006_case_0024_pair.jpg",
       "title": "任务 006 | 匿名 A/B 比较",
@@ -63,8 +57,7 @@
     {
       "id": 7,
       "meta": {
-        "case_id": "0025",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0025"
       },
       "image": "panels/task_007_case_0025_pair.jpg",
       "title": "任务 007 | 匿名 A/B 比较",
@@ -73,8 +66,7 @@
     {
       "id": 8,
       "meta": {
-        "case_id": "0025",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0025"
       },
       "image": "panels/task_008_case_0025_pair.jpg",
       "title": "任务 008 | 匿名 A/B 比较",
@@ -83,8 +75,7 @@
     {
       "id": 9,
       "meta": {
-        "case_id": "0027",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0027"
       },
       "image": "panels/task_009_case_0027_pair.jpg",
       "title": "任务 009 | 匿名 A/B 比较",
@@ -93,8 +84,7 @@
     {
       "id": 10,
       "meta": {
-        "case_id": "0027",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0027"
       },
       "image": "panels/task_010_case_0027_pair.jpg",
       "title": "任务 010 | 匿名 A/B 比较",
@@ -103,8 +93,7 @@
     {
       "id": 11,
       "meta": {
-        "case_id": "0029",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0029"
       },
       "image": "panels/task_011_case_0029_pair.jpg",
       "title": "任务 011 | 匿名 A/B 比较",
@@ -113,8 +102,7 @@
     {
       "id": 12,
       "meta": {
-        "case_id": "0029",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0029"
       },
       "image": "panels/task_012_case_0029_pair.jpg",
       "title": "任务 012 | 匿名 A/B 比较",
@@ -123,8 +111,7 @@
     {
       "id": 13,
       "meta": {
-        "case_id": "0034",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0034"
       },
       "image": "panels/task_013_case_0034_pair.jpg",
       "title": "任务 013 | 匿名 A/B 比较",
@@ -133,8 +120,7 @@
     {
       "id": 14,
       "meta": {
-        "case_id": "0034",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0034"
       },
       "image": "panels/task_014_case_0034_pair.jpg",
       "title": "任务 014 | 匿名 A/B 比较",
@@ -143,8 +129,7 @@
     {
       "id": 15,
       "meta": {
-        "case_id": "0042",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0042"
       },
       "image": "panels/task_015_case_0042_pair.jpg",
       "title": "任务 015 | 匿名 A/B 比较",
@@ -153,8 +138,7 @@
     {
       "id": 16,
       "meta": {
-        "case_id": "0042",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0042"
       },
       "image": "panels/task_016_case_0042_pair.jpg",
       "title": "任务 016 | 匿名 A/B 比较",
@@ -163,8 +147,7 @@
     {
       "id": 17,
       "meta": {
-        "case_id": "0053",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0053"
       },
       "image": "panels/task_017_case_0053_pair.jpg",
       "title": "任务 017 | 匿名 A/B 比较",
@@ -173,8 +156,7 @@
     {
       "id": 18,
       "meta": {
-        "case_id": "0053",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0053"
       },
       "image": "panels/task_018_case_0053_pair.jpg",
       "title": "任务 018 | 匿名 A/B 比较",
@@ -183,8 +165,7 @@
     {
       "id": 19,
       "meta": {
-        "case_id": "0056",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0056"
       },
       "image": "panels/task_019_case_0056_pair.jpg",
       "title": "任务 019 | 匿名 A/B 比较",
@@ -193,8 +174,7 @@
     {
       "id": 20,
       "meta": {
-        "case_id": "0056",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0056"
       },
       "image": "panels/task_020_case_0056_pair.jpg",
       "title": "任务 020 | 匿名 A/B 比较",
@@ -203,8 +183,7 @@
     {
       "id": 21,
       "meta": {
-        "case_id": "0064",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0064"
       },
       "image": "panels/task_021_case_0064_pair.jpg",
       "title": "任务 021 | 匿名 A/B 比较",
@@ -213,8 +192,7 @@
     {
       "id": 22,
       "meta": {
-        "case_id": "0064",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0064"
       },
       "image": "panels/task_022_case_0064_pair.jpg",
       "title": "任务 022 | 匿名 A/B 比较",
@@ -223,8 +201,7 @@
     {
       "id": 23,
       "meta": {
-        "case_id": "0068",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0068"
       },
       "image": "panels/task_023_case_0068_pair.jpg",
       "title": "任务 023 | 匿名 A/B 比较",
@@ -233,8 +210,7 @@
     {
       "id": 24,
       "meta": {
-        "case_id": "0068",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0068"
       },
       "image": "panels/task_024_case_0068_pair.jpg",
       "title": "任务 024 | 匿名 A/B 比较",
@@ -243,8 +219,7 @@
     {
       "id": 25,
       "meta": {
-        "case_id": "0070",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0070"
       },
       "image": "panels/task_025_case_0070_pair.jpg",
       "title": "任务 025 | 匿名 A/B 比较",
@@ -253,8 +228,7 @@
     {
       "id": 26,
       "meta": {
-        "case_id": "0070",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0070"
       },
       "image": "panels/task_026_case_0070_pair.jpg",
       "title": "任务 026 | 匿名 A/B 比较",
@@ -263,8 +237,7 @@
     {
       "id": 27,
       "meta": {
-        "case_id": "0075",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0075"
       },
       "image": "panels/task_027_case_0075_pair.jpg",
       "title": "任务 027 | 匿名 A/B 比较",
@@ -273,8 +246,7 @@
     {
       "id": 28,
       "meta": {
-        "case_id": "0075",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0075"
       },
       "image": "panels/task_028_case_0075_pair.jpg",
       "title": "任务 028 | 匿名 A/B 比较",
@@ -283,8 +255,7 @@
     {
       "id": 29,
       "meta": {
-        "case_id": "0076",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0076"
       },
       "image": "panels/task_029_case_0076_pair.jpg",
       "title": "任务 029 | 匿名 A/B 比较",
@@ -293,8 +264,7 @@
     {
       "id": 30,
       "meta": {
-        "case_id": "0076",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0076"
       },
       "image": "panels/task_030_case_0076_pair.jpg",
       "title": "任务 030 | 匿名 A/B 比较",
@@ -303,8 +273,7 @@
     {
       "id": 31,
       "meta": {
-        "case_id": "0078",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0078"
       },
       "image": "panels/task_031_case_0078_pair.jpg",
       "title": "任务 031 | 匿名 A/B 比较",
@@ -313,8 +282,7 @@
     {
       "id": 32,
       "meta": {
-        "case_id": "0078",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0078"
       },
       "image": "panels/task_032_case_0078_pair.jpg",
       "title": "任务 032 | 匿名 A/B 比较",
@@ -323,8 +291,7 @@
     {
       "id": 33,
       "meta": {
-        "case_id": "0085",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0085"
       },
       "image": "panels/task_033_case_0085_pair.jpg",
       "title": "任务 033 | 匿名 A/B 比较",
@@ -333,8 +300,7 @@
     {
       "id": 34,
       "meta": {
-        "case_id": "0085",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0085"
       },
       "image": "panels/task_034_case_0085_pair.jpg",
       "title": "任务 034 | 匿名 A/B 比较",
@@ -343,8 +309,7 @@
     {
       "id": 35,
       "meta": {
-        "case_id": "0094",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0094"
       },
       "image": "panels/task_035_case_0094_pair.jpg",
       "title": "任务 035 | 匿名 A/B 比较",
@@ -353,8 +318,7 @@
     {
       "id": 36,
       "meta": {
-        "case_id": "0094",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0094"
       },
       "image": "panels/task_036_case_0094_pair.jpg",
       "title": "任务 036 | 匿名 A/B 比较",
@@ -363,8 +327,7 @@
     {
       "id": 37,
       "meta": {
-        "case_id": "0103",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0103"
       },
       "image": "panels/task_037_case_0103_pair.jpg",
       "title": "任务 037 | 匿名 A/B 比较",
@@ -373,8 +336,7 @@
     {
       "id": 38,
       "meta": {
-        "case_id": "0103",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0103"
       },
       "image": "panels/task_038_case_0103_pair.jpg",
       "title": "任务 038 | 匿名 A/B 比较",
@@ -383,8 +345,7 @@
     {
       "id": 39,
       "meta": {
-        "case_id": "0135",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0135"
       },
       "image": "panels/task_039_case_0135_pair.jpg",
       "title": "任务 039 | 匿名 A/B 比较",
@@ -393,8 +354,7 @@
     {
       "id": 40,
       "meta": {
-        "case_id": "0135",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0135"
       },
       "image": "panels/task_040_case_0135_pair.jpg",
       "title": "任务 040 | 匿名 A/B 比较",
@@ -403,8 +363,7 @@
     {
       "id": 41,
       "meta": {
-        "case_id": "0143",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0143"
       },
       "image": "panels/task_041_case_0143_pair.jpg",
       "title": "任务 041 | 匿名 A/B 比较",
@@ -413,8 +372,7 @@
     {
       "id": 42,
       "meta": {
-        "case_id": "0143",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0143"
       },
       "image": "panels/task_042_case_0143_pair.jpg",
       "title": "任务 042 | 匿名 A/B 比较",
@@ -423,8 +381,7 @@
     {
       "id": 43,
       "meta": {
-        "case_id": "0147",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0147"
       },
       "image": "panels/task_043_case_0147_pair.jpg",
       "title": "任务 043 | 匿名 A/B 比较",
@@ -433,8 +390,7 @@
     {
       "id": 44,
       "meta": {
-        "case_id": "0147",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0147"
       },
       "image": "panels/task_044_case_0147_pair.jpg",
       "title": "任务 044 | 匿名 A/B 比较",
@@ -443,8 +399,7 @@
     {
       "id": 45,
       "meta": {
-        "case_id": "0151",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0151"
       },
       "image": "panels/task_045_case_0151_pair.jpg",
       "title": "任务 045 | 匿名 A/B 比较",
@@ -453,8 +408,7 @@
     {
       "id": 46,
       "meta": {
-        "case_id": "0151",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0151"
       },
       "image": "panels/task_046_case_0151_pair.jpg",
       "title": "任务 046 | 匿名 A/B 比较",
@@ -463,8 +417,7 @@
     {
       "id": 47,
       "meta": {
-        "case_id": "0155",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0155"
       },
       "image": "panels/task_047_case_0155_pair.jpg",
       "title": "任务 047 | 匿名 A/B 比较",
@@ -473,8 +426,7 @@
     {
       "id": 48,
       "meta": {
-        "case_id": "0155",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0155"
       },
       "image": "panels/task_048_case_0155_pair.jpg",
       "title": "任务 048 | 匿名 A/B 比较",
@@ -483,8 +435,7 @@
     {
       "id": 49,
       "meta": {
-        "case_id": "0157",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0157"
       },
       "image": "panels/task_049_case_0157_pair.jpg",
       "title": "任务 049 | 匿名 A/B 比较",
@@ -493,8 +444,7 @@
     {
       "id": 50,
       "meta": {
-        "case_id": "0157",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0157"
       },
       "image": "panels/task_050_case_0157_pair.jpg",
       "title": "任务 050 | 匿名 A/B 比较",
@@ -503,8 +453,7 @@
     {
       "id": 51,
       "meta": {
-        "case_id": "0167",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0167"
       },
       "image": "panels/task_051_case_0167_pair.jpg",
       "title": "任务 051 | 匿名 A/B 比较",
@@ -513,8 +462,7 @@
     {
       "id": 52,
       "meta": {
-        "case_id": "0167",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0167"
       },
       "image": "panels/task_052_case_0167_pair.jpg",
       "title": "任务 052 | 匿名 A/B 比较",
@@ -523,8 +471,7 @@
     {
       "id": 53,
       "meta": {
-        "case_id": "0180",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0180"
       },
       "image": "panels/task_053_case_0180_pair.jpg",
       "title": "任务 053 | 匿名 A/B 比较",
@@ -533,8 +480,7 @@
     {
       "id": 54,
       "meta": {
-        "case_id": "0180",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0180"
       },
       "image": "panels/task_054_case_0180_pair.jpg",
       "title": "任务 054 | 匿名 A/B 比较",
@@ -543,8 +489,7 @@
     {
       "id": 55,
       "meta": {
-        "case_id": "0184",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0184"
       },
       "image": "panels/task_055_case_0184_pair.jpg",
       "title": "任务 055 | 匿名 A/B 比较",
@@ -553,8 +498,7 @@
     {
       "id": 56,
       "meta": {
-        "case_id": "0184",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0184"
       },
       "image": "panels/task_056_case_0184_pair.jpg",
       "title": "任务 056 | 匿名 A/B 比较",
@@ -563,8 +507,7 @@
     {
       "id": 57,
       "meta": {
-        "case_id": "0189",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0189"
       },
       "image": "panels/task_057_case_0189_pair.jpg",
       "title": "任务 057 | 匿名 A/B 比较",
@@ -573,8 +516,7 @@
     {
       "id": 58,
       "meta": {
-        "case_id": "0189",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0189"
       },
       "image": "panels/task_058_case_0189_pair.jpg",
       "title": "任务 058 | 匿名 A/B 比较",
@@ -583,8 +525,7 @@
     {
       "id": 59,
       "meta": {
-        "case_id": "0191",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0191"
       },
       "image": "panels/task_059_case_0191_pair.jpg",
       "title": "任务 059 | 匿名 A/B 比较",
@@ -593,8 +534,7 @@
     {
       "id": 60,
       "meta": {
-        "case_id": "0191",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0191"
       },
       "image": "panels/task_060_case_0191_pair.jpg",
       "title": "任务 060 | 匿名 A/B 比较",
@@ -603,8 +543,7 @@
     {
       "id": 61,
       "meta": {
-        "case_id": "0194",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0194"
       },
       "image": "panels/task_061_case_0194_pair.jpg",
       "title": "任务 061 | 匿名 A/B 比较",
@@ -613,8 +552,7 @@
     {
       "id": 62,
       "meta": {
-        "case_id": "0194",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0194"
       },
       "image": "panels/task_062_case_0194_pair.jpg",
       "title": "任务 062 | 匿名 A/B 比较",
@@ -623,8 +561,7 @@
     {
       "id": 63,
       "meta": {
-        "case_id": "0199",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0199"
       },
       "image": "panels/task_063_case_0199_pair.jpg",
       "title": "任务 063 | 匿名 A/B 比较",
@@ -633,8 +570,7 @@
     {
       "id": 64,
       "meta": {
-        "case_id": "0199",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0199"
       },
       "image": "panels/task_064_case_0199_pair.jpg",
       "title": "任务 064 | 匿名 A/B 比较",
@@ -643,8 +579,7 @@
     {
       "id": 65,
       "meta": {
-        "case_id": "0205",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0205"
       },
       "image": "panels/task_065_case_0205_pair.jpg",
       "title": "任务 065 | 匿名 A/B 比较",
@@ -653,8 +588,7 @@
     {
       "id": 66,
       "meta": {
-        "case_id": "0205",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0205"
       },
       "image": "panels/task_066_case_0205_pair.jpg",
       "title": "任务 066 | 匿名 A/B 比较",
@@ -663,8 +597,7 @@
     {
       "id": 67,
       "meta": {
-        "case_id": "0208",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0208"
       },
       "image": "panels/task_067_case_0208_pair.jpg",
       "title": "任务 067 | 匿名 A/B 比较",
@@ -673,8 +606,7 @@
     {
       "id": 68,
       "meta": {
-        "case_id": "0208",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0208"
       },
       "image": "panels/task_068_case_0208_pair.jpg",
       "title": "任务 068 | 匿名 A/B 比较",
@@ -683,8 +615,7 @@
     {
       "id": 69,
       "meta": {
-        "case_id": "0216",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0216"
       },
       "image": "panels/task_069_case_0216_pair.jpg",
       "title": "任务 069 | 匿名 A/B 比较",
@@ -693,8 +624,7 @@
     {
       "id": 70,
       "meta": {
-        "case_id": "0216",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0216"
       },
       "image": "panels/task_070_case_0216_pair.jpg",
       "title": "任务 070 | 匿名 A/B 比较",
@@ -703,8 +633,7 @@
     {
       "id": 71,
       "meta": {
-        "case_id": "0217",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0217"
       },
       "image": "panels/task_071_case_0217_pair.jpg",
       "title": "任务 071 | 匿名 A/B 比较",
@@ -713,8 +642,7 @@
     {
       "id": 72,
       "meta": {
-        "case_id": "0217",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0217"
       },
       "image": "panels/task_072_case_0217_pair.jpg",
       "title": "任务 072 | 匿名 A/B 比较",
@@ -723,8 +651,7 @@
     {
       "id": 73,
       "meta": {
-        "case_id": "0221",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0221"
       },
       "image": "panels/task_073_case_0221_pair.jpg",
       "title": "任务 073 | 匿名 A/B 比较",
@@ -733,8 +660,7 @@
     {
       "id": 74,
       "meta": {
-        "case_id": "0221",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0221"
       },
       "image": "panels/task_074_case_0221_pair.jpg",
       "title": "任务 074 | 匿名 A/B 比较",
@@ -743,8 +669,7 @@
     {
       "id": 75,
       "meta": {
-        "case_id": "0223",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0223"
       },
       "image": "panels/task_075_case_0223_pair.jpg",
       "title": "任务 075 | 匿名 A/B 比较",
@@ -753,8 +678,7 @@
     {
       "id": 76,
       "meta": {
-        "case_id": "0223",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0223"
       },
       "image": "panels/task_076_case_0223_pair.jpg",
       "title": "任务 076 | 匿名 A/B 比较",
@@ -763,8 +687,7 @@
     {
       "id": 77,
       "meta": {
-        "case_id": "0235",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0235"
       },
       "image": "panels/task_077_case_0235_pair.jpg",
       "title": "任务 077 | 匿名 A/B 比较",
@@ -773,8 +696,7 @@
     {
       "id": 78,
       "meta": {
-        "case_id": "0235",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0235"
       },
       "image": "panels/task_078_case_0235_pair.jpg",
       "title": "任务 078 | 匿名 A/B 比较",
@@ -783,8 +705,7 @@
     {
       "id": 79,
       "meta": {
-        "case_id": "0237",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0237"
       },
       "image": "panels/task_079_case_0237_pair.jpg",
       "title": "任务 079 | 匿名 A/B 比较",
@@ -793,8 +714,7 @@
     {
       "id": 80,
       "meta": {
-        "case_id": "0237",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0237"
       },
       "image": "panels/task_080_case_0237_pair.jpg",
       "title": "任务 080 | 匿名 A/B 比较",
@@ -803,8 +723,7 @@
     {
       "id": 81,
       "meta": {
-        "case_id": "0238",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0238"
       },
       "image": "panels/task_081_case_0238_pair.jpg",
       "title": "任务 081 | 匿名 A/B 比较",
@@ -813,8 +732,7 @@
     {
       "id": 82,
       "meta": {
-        "case_id": "0238",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0238"
       },
       "image": "panels/task_082_case_0238_pair.jpg",
       "title": "任务 082 | 匿名 A/B 比较",
@@ -823,8 +741,7 @@
     {
       "id": 83,
       "meta": {
-        "case_id": "0239",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0239"
       },
       "image": "panels/task_083_case_0239_pair.jpg",
       "title": "任务 083 | 匿名 A/B 比较",
@@ -833,8 +750,7 @@
     {
       "id": 84,
       "meta": {
-        "case_id": "0239",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0239"
       },
       "image": "panels/task_084_case_0239_pair.jpg",
       "title": "任务 084 | 匿名 A/B 比较",
@@ -843,8 +759,7 @@
     {
       "id": 85,
       "meta": {
-        "case_id": "0246",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0246"
       },
       "image": "panels/task_085_case_0246_pair.jpg",
       "title": "任务 085 | 匿名 A/B 比较",
@@ -853,8 +768,7 @@
     {
       "id": 86,
       "meta": {
-        "case_id": "0246",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0246"
       },
       "image": "panels/task_086_case_0246_pair.jpg",
       "title": "任务 086 | 匿名 A/B 比较",
@@ -863,8 +777,7 @@
     {
       "id": 87,
       "meta": {
-        "case_id": "0251",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0251"
       },
       "image": "panels/task_087_case_0251_pair.jpg",
       "title": "任务 087 | 匿名 A/B 比较",
@@ -873,8 +786,7 @@
     {
       "id": 88,
       "meta": {
-        "case_id": "0251",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0251"
       },
       "image": "panels/task_088_case_0251_pair.jpg",
       "title": "任务 088 | 匿名 A/B 比较",
@@ -883,8 +795,7 @@
     {
       "id": 89,
       "meta": {
-        "case_id": "0255",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0255"
       },
       "image": "panels/task_089_case_0255_pair.jpg",
       "title": "任务 089 | 匿名 A/B 比较",
@@ -893,8 +804,7 @@
     {
       "id": 90,
       "meta": {
-        "case_id": "0255",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0255"
       },
       "image": "panels/task_090_case_0255_pair.jpg",
       "title": "任务 090 | 匿名 A/B 比较",
@@ -903,8 +813,7 @@
     {
       "id": 91,
       "meta": {
-        "case_id": "0268",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0268"
       },
       "image": "panels/task_091_case_0268_pair.jpg",
       "title": "任务 091 | 匿名 A/B 比较",
@@ -913,8 +822,7 @@
     {
       "id": 92,
       "meta": {
-        "case_id": "0268",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0268"
       },
       "image": "panels/task_092_case_0268_pair.jpg",
       "title": "任务 092 | 匿名 A/B 比较",
@@ -923,8 +831,7 @@
     {
       "id": 93,
       "meta": {
-        "case_id": "0278",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0278"
       },
       "image": "panels/task_093_case_0278_pair.jpg",
       "title": "任务 093 | 匿名 A/B 比较",
@@ -933,8 +840,7 @@
     {
       "id": 94,
       "meta": {
-        "case_id": "0278",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0278"
       },
       "image": "panels/task_094_case_0278_pair.jpg",
       "title": "任务 094 | 匿名 A/B 比较",
@@ -943,8 +849,7 @@
     {
       "id": 95,
       "meta": {
-        "case_id": "0284",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0284"
       },
       "image": "panels/task_095_case_0284_pair.jpg",
       "title": "任务 095 | 匿名 A/B 比较",
@@ -953,8 +858,7 @@
     {
       "id": 96,
       "meta": {
-        "case_id": "0284",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0284"
       },
       "image": "panels/task_096_case_0284_pair.jpg",
       "title": "任务 096 | 匿名 A/B 比较",
@@ -963,8 +867,7 @@
     {
       "id": 97,
       "meta": {
-        "case_id": "0285",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0285"
       },
       "image": "panels/task_097_case_0285_pair.jpg",
       "title": "任务 097 | 匿名 A/B 比较",
@@ -973,8 +876,7 @@
     {
       "id": 98,
       "meta": {
-        "case_id": "0285",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0285"
       },
       "image": "panels/task_098_case_0285_pair.jpg",
       "title": "任务 098 | 匿名 A/B 比较",
@@ -983,8 +885,7 @@
     {
       "id": 99,
       "meta": {
-        "case_id": "0287",
-        "comparison_slot": "baseline_nano_banana_pro"
+        "case_id": "0287"
       },
       "image": "panels/task_099_case_0287_pair.jpg",
       "title": "任务 099 | 匿名 A/B 比较",
@@ -993,8 +894,7 @@
     {
       "id": 100,
       "meta": {
-        "case_id": "0287",
-        "comparison_slot": "baseline_qwen_image_2_0_pro"
+        "case_id": "0287"
       },
       "image": "panels/task_100_case_0287_pair.jpg",
       "title": "任务 100 | 匿名 A/B 比较",
