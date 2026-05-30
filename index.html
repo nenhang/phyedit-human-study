@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhyEdit Human Study</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --panel: #fff;
+      --text: #17202a;
+      --muted: #627083;
+      --line: #d8dee8;
+      --accent: #1769aa;
+      --accent-soft: #e8f2fb;
+      --danger: #b42318;
+      --ok: #087443;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif;
+      line-height: 1.45;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(244, 246, 248, 0.94);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 12px 18px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: center;
+    }
+    h1 {
+      font-size: 19px;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+    .progress {
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .intro {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 16px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .task-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .task-title {
+      font-size: 17px;
+      font-weight: 700;
+    }
+    .nav {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    button {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    button.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+    .panel-img {
+      width: 100%;
+      display: block;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+    }
+    .questions {
+      display: grid;
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .question {
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+    }
+    .question-title {
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .question-text {
+      margin-bottom: 8px;
+      color: var(--muted);
+    }
+    .choices {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 8px;
+    }
+    label.choice {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      user-select: none;
+    }
+    label.choice input { display: none; }
+    label.choice.selected {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: #0b4d7c;
+      font-weight: 700;
+    }
+    textarea {
+      width: 100%;
+      min-height: 72px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px;
+      font: inherit;
+    }
+    .status {
+      margin-top: 12px;
+      min-height: 22px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .status.error { color: var(--danger); }
+    .status.ok { color: var(--ok); }
+    .task-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+      gap: 6px;
+      margin-top: 16px;
+    }
+    .task-dot {
+      padding: 7px 0;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 13px;
+    }
+    .task-dot.done {
+      background: #e7f6ef;
+      border-color: #99d8ba;
+      color: #075b36;
+    }
+    .task-dot.current {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+    }
+    .hidden { display: none !important; }
+    @media (max-width: 720px) {
+      .bar { grid-template-columns: 1fr; }
+      .choices { grid-template-columns: 1fr; }
+      main { padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <h1>PhyEdit Human Study</h1>
+      <div class="progress" id="progress">Loading...</div>
+    </div>
+  </header>
+  <main>
+    <section id="invalid" class="card hidden">
+      <h2>链接无效</h2>
+      <p>请检查链接中是否包含正确的 token。</p>
+    </section>
+
+    <section id="app" class="hidden">
+      <div class="card intro">
+        <div>请比较 Result A 和 Result B。每题需要完成 4 个选择；浏览器会本地保存进度，最后点击“完成并提交”。</div>
+        <div>重点判断目标物体的位置、尺度、深度、遮挡、身份保持和整体真实感。若无法判断，请选择“差不多/无法判断”。</div>
+      </div>
+
+      <section class="card">
+        <div class="task-head">
+          <div class="task-title" id="taskTitle"></div>
+          <div class="nav">
+            <button id="prevBtn">上一题</button>
+            <button id="nextBtn">下一题</button>
+            <button id="finishBtn" class="primary">完成并提交</button>
+          </div>
+        </div>
+        <img id="panel" class="panel-img" alt="task panel">
+        <div class="questions" id="questions"></div>
+        <div class="question">
+          <div class="question-title">可选备注</div>
+          <textarea id="comment" placeholder="如果某张图有明显问题，可以简单写一句。"></textarea>
+        </div>
+        <div class="status" id="status"></div>
+      </section>
+
+      <section class="card" style="margin-top:16px">
+        <div class="task-grid" id="taskGrid"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script>
+    const CHOICES = ["A明显更好", "A略好", "差不多/无法判断", "B略好", "B明显更好"];
+    const QUESTIONS = [
+      ["placement_scale", "1. 三维位置与尺度", "哪个结果更准确地把目标物体移动到参考图所示的位置、深度和尺度？"],
+      ["identity", "2. 物体身份保持", "哪个结果更好地保留了源图中目标物体的身份、外观、纹理和细节？"],
+      ["contact_occlusion", "3. 遮挡与接触真实感", "哪个结果中的前后遮挡、接触关系、支撑关系以及与周围区域的融合更自然？"],
+      ["overall_plausibility", "4. 整体真实合理性", "综合来看，哪个结果更像一张真实、合理、无明显编辑痕迹的图像？"]
+    ];
+    const params = new URLSearchParams(location.search);
+    const annotatorParam = params.get("a") || params.get("annotator") || "";
+    const token = params.get("token") || "";
+    const cfg = window.STUDY_CONFIG || {};
+    let publicData = null;
+    let participant = null;
+    let tasks = [];
+    let current = 0;
+    let responses = {};
+    const $ = (id) => document.getElementById(id);
+
+    function storageKey() {
+      return `phyedit_human_study_${cfg.studyId || "v2"}_${annotatorParam}_${token}`;
+    }
+
+    function blankResponse() {
+      return {
+        placement_scale: "",
+        identity: "",
+        contact_occlusion: "",
+        overall_plausibility: "",
+        comment: ""
+      };
+    }
+
+    function isComplete(resp) {
+      return QUESTIONS.every(([key]) => resp && resp[key]);
+    }
+
+    function answeredCount() {
+      return tasks.filter(t => isComplete(responses[t.id])).length;
+    }
+
+    function setStatus(msg, kind = "") {
+      $("status").textContent = msg;
+      $("status").className = "status " + kind;
+    }
+
+    function saveLocal() {
+      localStorage.setItem(storageKey(), JSON.stringify({responses, current}));
+      updateProgress();
+      renderGrid();
+    }
+
+    function loadLocal() {
+      try {
+        const data = JSON.parse(localStorage.getItem(storageKey()) || "{}");
+        responses = data.responses || {};
+        current = Number(data.current || 0);
+      } catch {
+        responses = {};
+        current = 0;
+      }
+    }
+
+    async function loadStudy() {
+      try {
+        const res = await fetch("data/public_study.json", {cache: "no-store"});
+        publicData = await res.json();
+      } catch (err) {
+        $("invalid").classList.remove("hidden");
+        $("progress").textContent = "Load failed";
+        return;
+      }
+      participant = publicData.participants[annotatorParam];
+      if (!participant || !token) {
+        $("invalid").classList.remove("hidden");
+        $("progress").textContent = "Invalid link";
+        return;
+      }
+      const allTasks = new Map(publicData.tasks.map(t => [Number(t.id), t]));
+      tasks = participant.task_ids.map(id => allTasks.get(Number(id))).filter(Boolean);
+      loadLocal();
+      if (current >= tasks.length) current = 0;
+      $("app").classList.remove("hidden");
+      render();
+    }
+
+    function renderQuestions(taskId) {
+      const container = $("questions");
+      container.innerHTML = "";
+      const resp = responses[taskId] || blankResponse();
+      for (const [key, title, text] of QUESTIONS) {
+        const q = document.createElement("div");
+        q.className = "question";
+        const h = document.createElement("div");
+        h.className = "question-title";
+        h.textContent = title;
+        const p = document.createElement("div");
+        p.className = "question-text";
+        p.textContent = text;
+        const choices = document.createElement("div");
+        choices.className = "choices";
+        for (const choice of CHOICES) {
+          const label = document.createElement("label");
+          label.className = "choice" + (resp[key] === choice ? " selected" : "");
+          const input = document.createElement("input");
+          input.type = "radio";
+          input.name = key;
+          input.value = choice;
+          input.checked = resp[key] === choice;
+          input.addEventListener("change", () => {
+            document.querySelectorAll(`input[name="${key}"]`).forEach(el => {
+              el.parentElement.classList.toggle("selected", el.checked);
+            });
+            updateCurrentResponse();
+            saveLocal();
+          });
+          label.append(input, document.createTextNode(choice));
+          choices.append(label);
+        }
+        q.append(h, p, choices);
+        container.append(q);
+      }
+      $("comment").value = resp.comment || "";
+      $("comment").oninput = () => {
+        updateCurrentResponse();
+        saveLocal();
+      };
+    }
+
+    function updateCurrentResponse() {
+      const task = tasks[current];
+      const resp = responses[task.id] || blankResponse();
+      for (const [key] of QUESTIONS) {
+        const checked = document.querySelector(`input[name="${key}"]:checked`);
+        resp[key] = checked ? checked.value : "";
+      }
+      resp.comment = $("comment").value || "";
+      responses[task.id] = resp;
+    }
+
+    function updateProgress() {
+      $("progress").textContent = `${participant.annotator} | ${answeredCount()} / ${tasks.length} 已完成`;
+    }
+
+    function renderGrid() {
+      const grid = $("taskGrid");
+      grid.innerHTML = "";
+      tasks.forEach((task, idx) => {
+        const btn = document.createElement("button");
+        btn.className = "task-dot";
+        if (idx === current) btn.classList.add("current");
+        if (isComplete(responses[task.id])) btn.classList.add("done");
+        btn.textContent = idx + 1;
+        btn.onclick = () => {
+          updateCurrentResponse();
+          saveLocal();
+          current = idx;
+          render();
+        };
+        grid.append(btn);
+      });
+    }
+
+    function render() {
+      const task = tasks[current];
+      $("taskTitle").textContent = `任务 ${current + 1} / ${tasks.length}`;
+      $("panel").src = task.image;
+      $("prevBtn").disabled = current === 0;
+      $("nextBtn").disabled = current === tasks.length - 1;
+      renderQuestions(task.id);
+      updateProgress();
+      renderGrid();
+      setStatus("");
+      localStorage.setItem(storageKey(), JSON.stringify({responses, current}));
+    }
+
+    async function submitAll() {
+      updateCurrentResponse();
+      saveLocal();
+      const missing = tasks.filter(t => !isComplete(responses[t.id]));
+      if (missing.length) {
+        current = tasks.findIndex(t => !isComplete(responses[t.id]));
+        render();
+        setStatus(`还有 ${missing.length} 题未完成。`, "error");
+        return;
+      }
+      if (!cfg.endpoint) {
+        setStatus("提交端点尚未配置，请联系问卷负责人。", "error");
+        return;
+      }
+      const payload = {
+        studyId: cfg.studyId,
+        token,
+        annotator: participant.annotator,
+        submittedAt: new Date().toISOString(),
+        userAgent: navigator.userAgent,
+        responses: tasks.map(t => ({task_id: t.id, ...responses[t.id]}))
+      };
+      setStatus("正在提交...");
+      try {
+        const res = await fetch(cfg.endpoint, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {"Content-Type": "text/plain;charset=utf-8"},
+          body: JSON.stringify(payload)
+        });
+        localStorage.setItem(storageKey() + "_submitted", new Date().toISOString());
+        setStatus("已提交完成。谢谢！", "ok");
+      } catch (err) {
+        setStatus(`提交失败，请截图联系 ${cfg.contactEmail || "负责人"}。`, "error");
+      }
+    }
+
+    $("prevBtn").onclick = () => {
+      updateCurrentResponse();
+      saveLocal();
+      if (current > 0) current -= 1;
+      render();
+    };
+    $("nextBtn").onclick = () => {
+      updateCurrentResponse();
+      saveLocal();
+      if (current < tasks.length - 1) current += 1;
+      render();
+    };
+    $("finishBtn").onclick = submitAll;
+
+    loadStudy();
+  </script>
+</body>
+</html>
