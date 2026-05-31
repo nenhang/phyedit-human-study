@@ -277,12 +277,12 @@
   <script src="config.js"></script>
   <script>
     const CHOICES = ["A明显更好", "A略好", "差不多/无法判断", "B略好", "B明显更好"];
-    const STUDY_REVISION = "bbox_text_20260531";
+    const STUDY_REVISION = "bbox_text_origin_20260531";
     const ASSET_VERSION = "bbox_20260531";
     const QUESTIONS = [
       ["placement_scale", "1. 移动位置与尺度", "哪个结果更准确地把 Source 黄框中的物体移动到 Target Reference 黄框所示的位置、深度和尺度？"],
       ["identity", "2. 物体身份保持", "移动之后，哪个结果中的目标物体更像 Source 黄框里的同一个物体，保留了它的外观、纹理和细节？"],
-      ["contact_occlusion", "3. 遮挡与接触真实感", "哪个结果更自然地处理了目标物体在新位置附近的前后遮挡、接触/支撑关系，以及与周围区域的融合？"],
+      ["contact_occlusion", "3. 遮挡、接触与原位置处理", "哪个结果更自然地处理了目标物体在新位置附近的前后遮挡、接触/支撑关系、与周围区域的融合，以及 Source 原位置是否被合理清空/修补、没有明显残影或重复物体？"],
       ["overall_plausibility", "4. 整体编辑合理性", "综合来看，哪个结果更好地完成了“把 Source 黄框物体移动到 Target Reference 黄框位置”的编辑目标，并且看起来真实、合理、无明显编辑痕迹？"]
     ];
     const params = new URLSearchParams(location.search);
