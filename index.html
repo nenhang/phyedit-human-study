@@ -246,7 +246,8 @@
     <section id="app" class="hidden">
       <div class="card intro">
         <div>请比较 Result A 和 Result B。每题需要完成 4 个选择；浏览器会本地保存进度，最后点击“完成并提交”。</div>
-        <div>重点判断目标物体的位置、尺度、深度、遮挡、身份保持和整体真实感。若无法判断，请选择“差不多/无法判断”。</div>
+        <div>图中英文标签含义：Source 是编辑前源图；Target Reference 是目标参考图；Result A / Result B 是两个匿名编辑结果。</div>
+        <div>黄色框标出 Source 和 Target Reference 中需要关注的目标物体。请判断 Result A / Result B 中哪个结果更准确地移动该目标物体，并更好保持物体身份、尺度、深度、遮挡关系和真实感。Result A / Result B 中不画框，以免遮挡结果细节。</div>
       </div>
 
       <section class="card">
@@ -276,6 +277,8 @@
   <script src="config.js"></script>
   <script>
     const CHOICES = ["A明显更好", "A略好", "差不多/无法判断", "B略好", "B明显更好"];
+    const STUDY_REVISION = "bbox_20260531";
+    const ASSET_VERSION = "bbox_20260531";
     const QUESTIONS = [
       ["placement_scale", "1. 三维位置与尺度", "哪个结果更准确地把目标物体移动到参考图所示的位置、深度和尺度？"],
       ["identity", "2. 物体身份保持", "哪个结果更好地保留了源图中目标物体的身份、外观、纹理和细节？"],
@@ -329,7 +332,7 @@
     }
 
     function submittedKey() {
-      return storageKey() + "_submitted";
+      return storageKey() + "_submitted_" + STUDY_REVISION;
     }
 
     function isSubmitted() {
@@ -473,7 +476,7 @@
     function render() {
       const task = tasks[current];
       $("taskTitle").textContent = `任务 ${current + 1} / ${tasks.length}`;
-      $("panel").src = task.image;
+      $("panel").src = `${task.image}?v=${ASSET_VERSION}`;
       renderQuestions(task.id);
       updateProgress();
       renderGrid();
