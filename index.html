@@ -343,11 +343,11 @@
       const submitted = isSubmitted();
       $("prevBtn").disabled = submitState === "busy" || current === 0;
       $("nextBtn").disabled = submitState === "busy" || current === tasks.length - 1;
-      $("finishBtn").disabled = submitState === "busy" || submitted;
+      $("finishBtn").disabled = submitState === "busy";
       if (submitState === "busy") {
         $("finishBtn").textContent = "提交中...";
       } else if (submitted) {
-        $("finishBtn").textContent = "已提交";
+        $("finishBtn").textContent = "修改后再次提交";
       } else {
         $("finishBtn").textContent = "完成并提交";
       }
@@ -392,7 +392,7 @@
       $("app").classList.remove("hidden");
       render();
       if (isSubmitted()) {
-        setStatus("已提交完成。谢谢！", "ok");
+        setStatus("已读取你之前的答案。请重新检查每题；如有修改，最后点击“修改后再次提交”。", "ok");
       }
     }
 
@@ -481,7 +481,7 @@
       updateProgress();
       renderGrid();
       if (isSubmitted()) {
-        setStatus("已提交完成。谢谢！", "ok");
+        setStatus("已读取你之前的答案。可以继续修改，修改后请再次提交。", "ok");
       } else {
         setStatus("");
       }
@@ -491,11 +491,7 @@
 
     async function submitAll() {
       if (submitState === "busy") return;
-      if (isSubmitted()) {
-        setStatus("已提交完成。谢谢！", "ok");
-        updateNavButtons();
-        return;
-      }
+      const resubmitting = isSubmitted();
       updateCurrentResponse();
       saveLocal();
       const missing = tasks.filter(t => !isComplete(responses[t.id]));
@@ -518,7 +514,7 @@
         responses: tasks.map(t => ({task_id: t.id, ...responses[t.id]}))
       };
       submitState = "busy";
-      setStatus("正在提交，请不要重复点击。", "busy");
+      setStatus(resubmitting ? "正在重新提交，请不要重复点击。" : "正在提交，请不要重复点击。", "busy");
       updateNavButtons();
       try {
         await fetch(cfg.endpoint, {
@@ -529,7 +525,7 @@
         });
         localStorage.setItem(submittedKey(), new Date().toISOString());
         submitState = "done";
-        setStatus("已提交完成。谢谢！", "ok");
+        setStatus(resubmitting ? "已重新提交完成。谢谢！" : "已提交完成。谢谢！", "ok");
       } catch (err) {
         submitState = "idle";
         setStatus(`提交失败，请截图联系 ${cfg.contactEmail || "负责人"}。`, "error");
