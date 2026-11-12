@@ -5,7 +5,7 @@
   "rubric_version": "task_flow_impact_av_0_to_4",
   "collection": {
     "endpoint": "https://script.google.com/macros/s/AKfycbzyhvHOPGqJlNj3OKeLJuA50auUWqvhe_1zQAHqiKAqpbf6fDtLGLJ3Kmt4mvzBmkb7Pg/exec",
-    "accepting_responses": false
+    "accepting_responses": true
   },
   "assignments": {
     "R01": [
