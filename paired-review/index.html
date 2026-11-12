@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self' https: blob:; frame-src https://drive.google.com https://script.google.com https://*.googleusercontent.com; form-action https://script.google.com https://*.googleusercontent.com; connect-src 'self'; base-uri 'self'; object-src 'none'">
+  <title>成片盲评 · Video Review</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="成片盲评首页"><span class="brand-mark" aria-hidden="true">▥</span><span>成片盲评<small>VIDEO REVIEW</small></span></a>
+    <div class="header-right"><span class="privacy-tag">匿名 · 独立判断</span><button type="button" class="text-button" id="guide-toggle">评分说明</button></div>
+  </header>
+  <main id="app" aria-live="polite"><div class="loading">正在加载评审任务…</div></main>
+  <dialog id="guide-dialog" aria-labelledby="guide-title">
+    <div class="dialog-header"><h2 id="guide-title">评分说明</h2><button type="button" class="icon-button" id="guide-close" aria-label="关闭评分说明">×</button></div>
+    <p>请完整观看两条成片，结合相同的任务要求独立判断。没有标准答案；无需猜测制作来源，也不需要刻意拉开分差。</p>
+    <dl class="metric-guide">
+      <div><dt>Task · 任务完成</dt><dd>成片是否实现了需求中的内容和表达目标？未查看的源素材信息不作推断。</dd></div>
+      <div><dt>Flow · 组织与节奏</dt><dd>镜头顺序、信息衔接和节奏是否清楚、连贯？有意使用的重复或跳切不自动扣分。</dd></div>
+      <div><dt>Impact · 表达效果</dt><dd>成片是否有效传达信息、建立情绪或吸引注意？不以热闹、快切或音乐响度代替表达效果。</dd></div>
+      <div><dt>AV · 声画协调</dt><dd>声音是否清楚、搭配是否适切，声画关系与时序是否支撑表达？不要求每个任务都添加旁白或音乐。</dd></div>
+    </dl>
+    <div class="anchor-list"><span><b>0</b>基本未实现</span><span><b>1</b>明显不足</span><span><b>2</b>部分实现</span><span><b>3</b>基本良好</span><span><b>4</b>完成出色</span></div>
+    <p class="muted">无法判断和 0 分不同。播放失败、听不懂语言或缺少必要信息时，请选“无法判断”，并在备注说明。片长、分辨率和未被任务要求的特效本身不代表质量。</p>
+  </dialog>
+  <noscript><p>此评审页面需要启用 JavaScript，答案保存在当前设备；提交后会显示收集确认。</p></noscript>
+  <footer>请独立完成，不与其他评委商量。建议使用耳机，可分两次完成。</footer>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>
