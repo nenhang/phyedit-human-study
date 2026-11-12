@@ -4,7 +4,8 @@
   "title": "成片盲评",
   "rubric_version": "task_flow_impact_av_0_to_4",
   "collection": {
-    "endpoint": "https://script.google.com/macros/s/AKfycbzyhvHOPGqJlNj3OKeLJuA50auUWqvhe_1zQAHqiKAqpbf6fDtLGLJ3Kmt4mvzBmkb7Pg/exec"
+    "endpoint": "https://script.google.com/macros/s/AKfycbzyhvHOPGqJlNj3OKeLJuA50auUWqvhe_1zQAHqiKAqpbf6fDtLGLJ3Kmt4mvzBmkb7Pg/exec",
+    "accepting_responses": false
   },
   "assignments": {
     "R01": [
@@ -270,28 +271,28 @@
       "revision": 1,
       "title": "英文多机位访谈",
       "instruction": "使用提供的同步访谈机位，剪出简洁、自然的对话。保持讲话连贯，选择有明确动机的角度切换，避免跳跃和重复。只使用允许的机位素材，目标时长约 40 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_8f4a5967ca445cee",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_8f4a5967ca445cee.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "d707e7a34ff38709a3687efeed96c27b76038b14333b6d84f4c6813af7bf94e2",
+          "duration_seconds": 41.4
         },
         {
           "id": "clip_244156f911ec0baa",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_244156f911ec0baa.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "61c0526ac94a8225bb1f00e89a702c33b063140f766924a77f6e7ec2840992ab",
+          "duration_seconds": 46.303
         }
       ],
-      "fingerprint": "e6a8100a7a47b0c6701c1f00d8b1218f72fc79c53cff19b028c288f3749f5415",
+      "fingerprint": "9631e5ca8389a8295c5bcec4a27a95f1fc9935ea9855b02656fda73c0e7bd168",
       "instruction_summary": "将同步拍摄的访谈剪成约 40 秒的自然对话。讲话要连贯，切换角度要有理由，避免重复和跳跃。",
       "instruction_note": "本组对白为英语，任务说明为中文；请结合实际听到、看到的内容判断。",
       "instruction_language": "zh-CN"
@@ -301,28 +302,28 @@
       "revision": 1,
       "title": "稻香叙事短广告",
       "instruction": "用提供的画面、现场原声和音乐制作简洁的叙事广告。建立核心人物或人物关系，保留对白中的铺垫，让情绪转折改变人物共同处境，而不是只出现一个孤立反应。用有明确作用的画面支撑表达，让音乐参与场景，而不只是偶尔出现的情绪点缀。\n\n较早引入第一段指定音乐；在对白或反应需要空间时，有动机地降低或撤出音乐；当人物共同参与音乐的情节展开时，再接入后面的音乐片段。根据实际听到的内容选择交接点：两段素材的声音内容有重叠，并不意味着必须同时播放。音乐不能盖住现场对白，应保留有意的反差，不要求全片持续有音乐。\n\n只使用允许的源素材，目标时长约 55 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_a228f7d62e4ad507",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_a228f7d62e4ad507.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "54b7bbfeb64a8bca45fed99166e8aa2a53a577dc5f11a1dabec30bb6897e3757",
+          "duration_seconds": 55.534
         },
         {
           "id": "clip_a0bb2b04ef1ae98c",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_a0bb2b04ef1ae98c.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "111b74d27dbe61f7b789362e1743304e125a834ee1774e309cc28f731df43ba6",
+          "duration_seconds": 56.141
         }
       ],
-      "fingerprint": "35875e27f58f3d5cfea16f2a8e42ea18a2065d0ba5e173fd61f082e423ecf728",
+      "fingerprint": "53ace6a04fbfc3c73aac6192396b012c097fd9706041e73fb913c4c4fb0b2fe5",
       "instruction_summary": "制作约 55 秒的叙事广告，交代人物与关系，保留对白铺垫，让音乐参与情绪转折。音乐要给对白和反应留出空间。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -332,28 +333,28 @@
       "revision": 1,
       "title": "熬夜挑战片头",
       "instruction": "使用提供的多次拍摄素材，为“48 小时不睡觉挑战”制作连贯的 35–50 秒片头。\n\n清楚介绍参与者和实验：他将在连接脑电及其他监测设备的情况下保持清醒 48 小时，观察睡眠剥夺对身体和心理的影响。交代挑战规模和核心问题，再压缩呈现几个连续的已过时间阶段。通过活动、注意力、记忆和疲惫的变化，让早期自信逐渐变成具体的保持清醒的挣扎。推进要紧凑、清楚，不能只给一个后期疲惫的片段。以挑战后期的挣扎收尾，不透露最终结果，不返回开场重新介绍或重启挑战。\n\n从不同拍摄版本中选择合适表演，保留清楚的原始对白、完整语句和可信的动作连续性。全景、近景、人物反应和设备细节，应帮助解释实验或强化前后变化。保持运动方向、视线、身体位置和声音的连续，让不同拍摄版本像同一段过程。\n\n节奏简洁，但给核心信息和身体反应留下表达空间。避免重复表演、重复对白、无理由切机位、错误口型对应、混乱时序和套用通用预告片节奏。只使用提供的画面及现场原声；不添加旁白、字幕、标题、合成声音、外部音乐或变速。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_90ef22fd14bde399",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_90ef22fd14bde399.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "376d18dd80309efbcd7be1ed1715919fac5eaa62fcd4beaa8cff7d8f1e00df00",
+          "duration_seconds": 44.566
         },
         {
           "id": "clip_9c1df55124ee1d79",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_9c1df55124ee1d79.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "78012bab5ab540272c2c34a0ec659c475d18a98015845743ae85241423f969b6",
+          "duration_seconds": 47.214
         }
       ],
-      "fingerprint": "20c65e676c148d98fbd37ae363b622fa597bf94a7cddca5fea62813b6787ff9f",
+      "fingerprint": "0bb557c8107e6445a80fe251dc3e16cf47e8843e3a3abf3759ba11a4321b763e",
       "instruction_summary": "剪出 35–50 秒的“48 小时不睡觉挑战”片头：说明实验，展示几个连续时间阶段，让最初自信逐渐变为疲惫挣扎，结尾不揭晓最终结果。只用现场画面和原声。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -363,28 +364,28 @@
       "revision": 1,
       "title": "特斯拉口播与辅助画面",
       "instruction": "使用提供的出镜讲解和汽车辅助画面，制作简洁的特斯拉产品评测段落。以主要出镜讲述者的声音作为剪辑主线，保留完整、有用的解释和正确的说话人归属；用相关产品和驾驶镜头支撑观点，在个人判断或连续性需要时回到讲述者。\n\n在不承载关键信息的段落中有选择地使用指定音乐，不遮盖讲话。保持源素材的连续性，只使用允许的源素材。目标时长约 75–85 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_509a5eb952b23109",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_509a5eb952b23109.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "48a1d7bbf74d7dfaec39721f02828a5ca23004f1c5917e8198a958e80dd81a31",
+          "duration_seconds": 82.3
         },
         {
           "id": "clip_86586f053e2c3e74",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_86586f053e2c3e74.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "5aa6d54935526f4e5a35ed34badd3b8f533a6a1ca8e2f51c5f24f8565ea6b66a",
+          "duration_seconds": 77.4
         }
       ],
-      "fingerprint": "bc929f19068d8a613710ced0e3958886e2713ba4c082a620b3f7fbb1f97a546d",
+      "fingerprint": "b9b1505e59026f728379819892e481cb87b892720a4ed20327c16fb86ec0eab8",
       "instruction_summary": "制作约 75–85 秒的产品评测段落。以口播为主线，用相关产品和驾驶画面解释观点，在个人判断或衔接需要时切回讲述者，音乐不盖住讲话。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -394,28 +395,28 @@
       "revision": 1,
       "title": "老台羊肉串与地方生活",
       "instruction": "使用提供的老台羊肉串素材，制作简洁的美食与地方文化混剪。如果素材中包含个人回忆、档案细节或从过去走向当下的线索，用它自然引出今天的地点和食物体验。随后交代地点与准备过程，让人物、烹饪、细节和氛围形成有食欲的推进，合理使用现场原声和音效，并在当下的美食或社区特色上干净收尾。\n\n只有当非讲话的准备、火焰、上菜或运动过程与音乐结合后，能更清楚地表达制作变化或声音重音时，才使用局部变速或速度曲线；纪实观察和有意义的现场声音保持正常速度。只使用允许的源素材，目标时长约 57 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_3a2dea49674b21cf",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_3a2dea49674b21cf.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "bbcef53ddf9942a94fc0b015cb15da9962ca4045aa382e9d35750f7a1bab7a48",
+          "duration_seconds": 56.866
         },
         {
           "id": "clip_ebd87b375d6f458e",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_ebd87b375d6f458e.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "3223072648f90917e1af5d43fdecf89b5742c854e7f12edb903bff59758b5331",
+          "duration_seconds": 44.38
         }
       ],
-      "fingerprint": "602244ed5d4f615f5b50bc03ec8d475f6fa5b1c653f0baf100b8bc0ebb37ea23",
+      "fingerprint": "1b34b2b51dc3bf1887e43b66d117baae961cacdcb3347ae01da23976b747049d",
       "instruction_summary": "制作约 57 秒的美食与地方生活短片，交代地点与制作过程，让人物、烹饪和氛围形成连贯推进；素材若有回忆或旧影像，应自然接到当下的食物与生活。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -425,28 +426,28 @@
       "revision": 1,
       "title": "索尼城市生活旅行记录",
       "instruction": "使用提供的索尼 Xperia 素材，制作简洁的第一人称生活旅行记录。建立城市环境与旅行者视角，让行走、街道、美食和个人时刻形成可理解的推进；保留有用的源讲话或环境声，并有意识地收尾。\n\n在不含讲话的行走、旅行或运动衔接中，只有当动作过程能加强转场或音乐重音时，才使用局部变速或速度曲线。具体处理由画面和音乐决定；讲话及有意义的现场声音保持正常速度。有选择地使用指定背景音乐和音效，让它们支撑而非遮盖讲话。只使用允许的源素材，目标时长约 76 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_ebbd97613fb63b37",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_ebbd97613fb63b37.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "d092a9da422c155633363b0d56f663134e43125eeaf06b196201c4038d56a4fc",
+          "duration_seconds": 76
         },
         {
           "id": "clip_c2b6ed1e57096f0c",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_c2b6ed1e57096f0c.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "8e9bfcc310a7400a8a8cd353825db466901250323ff9e1564ce484c1b2e3bc4e",
+          "duration_seconds": 74.867
         }
       ],
-      "fingerprint": "cd7f2faa3a4c3db809296f37e5b6cc8dda55481d0316b503420e6ba6a8855556",
+      "fingerprint": "520844f10fb4eb92ee6e09913b2b84c73a4cdc09761f8b9917d279b3dca2f5ec",
       "instruction_summary": "制作约 76 秒的第一人称生活记录。交代城市与旅行者，让行走、街景、美食和个人时刻形成清楚推进，保留有用的人声或环境声，有意识地收尾。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -456,28 +457,28 @@
       "revision": 1,
       "title": "《归宿》面塑纪录短片",
       "instruction": "使用提供的手艺制作、采访、教学、食物和环境素材，制作简洁的泰山面塑观察纪录片。交代人物与地点，将过程和人物细节组织成连贯推进，在有用时保留采访或自然声音，展开手艺传承主题并有意识地收尾。\n\n从开场过渡到主体附近开始，以指定的 Capo Productions《Departure》片段作低调背景音乐；指定火鼓音效只在能支撑开场剪辑时使用，其他开场时刻可留给现场和环境声音。采访始终保持清楚。原工程中的其他独立音效未提供，不另行编造替代声音。\n\n对不含讲话的手艺动作、环境运动或过程与地点之间的衔接，可使用轻微但能察觉的局部变速或短速度曲线，前提是具体动作能让时间、质感或重音更清楚；曲线形状和位置由素材及音乐决定。采访、同步动作和有意义的自然声音保持正常速度，不把观察纪录片剪成特效混剪。\n\n只使用允许的源素材，目标时长约 2 分 20 秒。横向 16:9 画面，不额外添加黑边，不拉伸或无必要地裁切源画面。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_787fcb160d9b52a4",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_787fcb160d9b52a4.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "27b3466964dc4161eb324e3211f193e1c7e8d1ea70b4f1dbc8c5005ad4cd1df8",
+          "duration_seconds": 140
         },
         {
           "id": "clip_d6aa82bacd50a467",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_d6aa82bacd50a467.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "80975028b0fc42aef2e372849f5ff9316549f27a4a30f3bd036d869209e9a4a3",
+          "duration_seconds": 139.8
         }
       ],
-      "fingerprint": "c6d55d9654a8e457a441d6958cb8d1dccf00b0cc0089968fd9a590f67af48ff6",
+      "fingerprint": "f7c5ff82068fd8c665e735281ec2be581dc6f6d1fca723dccbd52e305aebbb96",
       "instruction_summary": "制作约 2 分 20 秒的泰山面塑观察纪录片。围绕手艺、人物与传承展开，合理组织制作过程、采访和生活细节，保持自然观察感及清楚的人声。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -487,28 +488,28 @@
       "revision": 1,
       "title": "夏威夷旅行记录",
       "instruction": "使用提供的课程素材，制作简洁的夏威夷旅行记录。建立旅行者视角，并具体进入旅行环境，让海岸、个人、牧场和航拍时刻形成可理解的推进，而不是按类别罗列镜头。\n\n以指定夏威夷旁白作为前景叙事，将相关完整、清楚的语句配在对应旅行画面上。背景音乐应在同一时间线上铺在旁白下方，降低音量以保证旁白清楚；不能把旁白和音乐完全拆成互斥的连续两段。需要时可使用纯音乐段落或有用的自然环境声，但环境声不能和旁白争夺注意。围绕旅行体验有意识地收尾。\n\n只使用允许的源素材，目标时长约 40–50 秒。横向 16:9，不加黑边，保留源画面构图，不拉伸或无必要地裁切。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_d1ebf8391dd5f672",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_d1ebf8391dd5f672.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "e617f26cba4d16b118c54d5901273fb88bf30939f6e27c680f25ddde69bfdc11",
+          "duration_seconds": 61.254
         },
         {
           "id": "clip_d3c64b220de824ab",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_d3c64b220de824ab.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "e72d959c6835d2de9ca95be59c5093f3c493f3f20863f16592a3e23bae00ed87",
+          "duration_seconds": 46
         }
       ],
-      "fingerprint": "c37ede7a4649953a4bd027be5907825e2d7840036e09a5dd8af9fc50cc81af92",
+      "fingerprint": "59583da24d20677f5f05c5e4072ad32a32ed315b5e52d826afe41c87449a2c7a",
       "instruction_summary": "制作约 40–50 秒的夏威夷旅行记录，以指定旁白为前景叙事，连贯串起海岸、个人、牧场和航拍时刻。背景音乐应在旁白下方同时播放并让出音量，不能把两者完全分成前后两段。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -518,28 +519,28 @@
       "revision": 1,
       "title": "餐厅宣传短片",
       "instruction": "使用提供的场地、服务、准备、烹饪和摆盘素材，制作精致的餐厅广告。交代地点，通过制作过程和食物质感逐步增强食欲，展示多样的成品菜，并以餐厅特色收尾。\n\n在不含讲话的服务、准备、烹饪、镜头运动和质感动作中，当动作进入、关键事件及结束能增强期待、冲击力或音乐表达时，有目的地结合跟随音乐节奏的切换和明显的局部变速或多关键帧速度曲线。密度、形状和位置由具体动作和音乐决定，不套用固定切换速度、曲线方向或特效数量。场地和成品菜需要被看清时，保留正常速度的停留。\n\n使用指定背景音乐，只使用允许的源素材，目标时长约 36 秒。横向 16:9，不额外加黑边，不拉伸或无必要地裁切源画面。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_81b754c5844fd5ac",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_81b754c5844fd5ac.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "3c64f86d84f5ad092786ef82bde1ecb6ce39dfb700fa9a0ca5864c016b3a081c",
+          "duration_seconds": 36
         },
         {
           "id": "clip_aed42df0f1d09c31",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_aed42df0f1d09c31.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "314ad063aad2b4919a96bde4a3dee4f1463e5b585fc18bc60508055a4623badf",
+          "duration_seconds": 35.834
         }
       ],
-      "fingerprint": "44cfcc4c137a0b59d68fdde699adcdf33b4fa330641831eb2e0ef72ad303a204",
+      "fingerprint": "42e53275f24fc0b59e59f62733a9f2420959de72906e66e812c8195168c3decc",
       "instruction_summary": "制作约 36 秒的精致餐厅广告，从环境、服务和烹饪推进到多样菜品与餐厅收尾。切点和局部变速要服务食欲、动作及音乐，成品和环境要留出看清的时间。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -549,28 +550,28 @@
       "revision": 1,
       "title": "火锅商业短片",
       "instruction": "使用提供的镜头制作紧凑的美食广告。先建立地点、人物或就餐体验，再把食材、准备过程、质感和成品组织成从环境到制作再到共同用餐结果的一条清楚进程。通过指定背景音乐和音效形成节奏递进。\n\n只有在不含讲话的准备、倾倒、火焰或质感动作中，画面动作过程与音乐能让物理动作或声音重音更清楚时，才使用局部变速或速度曲线。曲线形状和密度由素材决定，不设固定数量。需要突出产品时给足看清的停留，并保留有意义的现场原声。只使用允许的源素材，目标时长约 55–60 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_5969e7777b5fd4ad",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_5969e7777b5fd4ad.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "c1e3f9fd9df3441578d6a2dfe1cd49c137abf1f62e2561d1f64270ed171a1a2c",
+          "duration_seconds": 57.5
         },
         {
           "id": "clip_2f649e6283ffa14f",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_2f649e6283ffa14f.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "c4a077311fcf657806d936b4dfbcfcc54fc4830aaf1370b2821fd9e45999b2f6",
+          "duration_seconds": 57.6
         }
       ],
-      "fingerprint": "6e738c50325ffa16a9d7de45920fca21e73ee228514086c48a6ea94e731ebf15",
+      "fingerprint": "962358366bc76dd9bb35b287a74debecd4d3e226b9497c158e76d0010d800fea",
       "instruction_summary": "制作约 55–60 秒的美食广告。让就餐环境和人物、食材与制作、食物质感、成品与共同用餐结果形成推进，用音乐和声音逐步带动节奏。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -580,28 +581,28 @@
       "revision": 1,
       "title": "奔驰汽车广告",
       "instruction": "使用提供的车外、车内、驾驶者、历史建筑和夜间驾驶素材，制作完整、精致的奔驰电视广告。以指定标准旁白的原顺序作为叙事主线，不重复、拉长或合成旁白。让产品亮相、地点、驾驶体验、车内细节和明确的品牌收尾形成有高级感的推进。\n\n对不含讲话的驾驶、产品细节或运动时刻，只有动作过程能支撑高级感或音乐重音时，才使用局部变速或速度曲线，处理由画面和音乐决定。源声音、旁白和同步关系承载意义时，应予以保护。有选择地使用指定背景音乐和音效，只使用允许的源素材，目标时长约 60 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_f0b4036d12923393",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_f0b4036d12923393.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "89bd0cf78a9c9aab07d6acbab0b6335aa2d739beaa093d25126f20b4e68b3478",
+          "duration_seconds": 58.734
         },
         {
           "id": "clip_1ecfb8ad147c691c",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_1ecfb8ad147c691c.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "315bdee2afaf66a17ff8764d5f1b610930f804dea44f449017458e8cb3b3b4f6",
+          "duration_seconds": 43.92
         }
       ],
-      "fingerprint": "6e7dcb22ed7de074a931f56ecaeebee82191b0670a865a7f1c49b90eb73fd9a4",
+      "fingerprint": "5b29e9b86fb945814090e58c1f05170dba43bab7a89e2ebe70a43b4967757aa4",
       "instruction_summary": "制作约 60 秒的奔驰广告，以指定旁白的原顺序为主线，串起产品亮相、环境、驾驶体验、车内细节和品牌收尾，保持清楚的人声与高级感。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -611,28 +612,28 @@
       "revision": 1,
       "title": "车联网功能宣传",
       "instruction": "使用提供的素材，制作简洁的车联网产品宣传片。以指定标准旁白的原顺序作为叙事主线，不重复、拉长或合成旁白。展示一个具体的日常问题或不便、车联网的介入，以及随后产生的好处；使用提供的人物、反应、界面和产品镜头让变化可见。\n\n有选择地使用指定音乐和音效。只使用允许的源素材，目标时长约 30 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_c88d1ebde0481f6b",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_c88d1ebde0481f6b.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "f55ac0456ee307586529c82242fc9dad45c8ccc0911ec509b1ea43a1451ebd00",
+          "duration_seconds": 49.483
         },
         {
           "id": "clip_7d251dbf8bd25b17",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_7d251dbf8bd25b17.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "00f63617f37495d46eb00202b3921f4b60032df5df58f69374a1c05372649171",
+          "duration_seconds": 30.7
         }
       ],
-      "fingerprint": "b68052e3863322caae986fab6e4a75672ce9d0c0358edc97be43f0c6525cdb50",
+      "fingerprint": "129c296ed83b31cf28f8f113d6d77556c763979e1d917f978142742f2ec9423d",
       "instruction_summary": "制作约 30 秒的车联网宣传片。用指定旁白和相关人物、界面、产品画面，讲清日常问题、车联网如何介入，以及带来的具体好处。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -642,28 +643,28 @@
       "revision": 1,
       "title": "雪场运动混剪",
       "instruction": "使用提供的片段制作紧凑、有能量的雪上运动混剪，以指定背景音乐作为节奏基础。通过不同运动动作建立推进，跨切换保持运动方向，变化景别和动作阶段。\n\n在不含讲话的助跑、起跳、空中、落地或镜头运动过程中，当动作弧线能提升冲击力、动作清楚程度或音乐表达时，使用局部变速或速度曲线，密度与位置由素材和音乐决定。正常速度更利于方位、结果或动作可读时，保持正常速度。只使用允许的源素材，目标时长约 15 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_4fa40abf985ea9ba",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_4fa40abf985ea9ba.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "902660d54345fcf970667511aa9958c528cb971126f2187e3d3935d43706b1e2",
+          "duration_seconds": 42.774
         },
         {
           "id": "clip_f921c8bb53e10e9c",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_f921c8bb53e10e9c.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "171720f8abd9fed11240738e388e8b9ffa016d0c8c28e63221839ee1330a992e",
+          "duration_seconds": 12.934
         }
       ],
-      "fingerprint": "ee8aa949ef4e2bd96edd8c696c5381aeee771adc0f68e14ee73bf6b17dbf3645",
+      "fingerprint": "5cba319eeb449ba0c092f674afc6df012882d282a54f882c82e05ca8e157af48",
       "instruction_summary": "制作约 15 秒的高能量雪上运动混剪，用音乐、不同动作和景别建立动势，保持方向和动作可读；变速只在有助于动作或音乐表达时使用。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -673,28 +674,28 @@
       "revision": 1,
       "title": "马拉松声音设计",
       "instruction": "使用提供的画面和声音素材，制作一段马拉松短片。通过指定背景音乐、分层环境声、音效、呼吸和观众声，建立地点、期待、发力和释放。比赛现场声音和设计音效应支撑身体努力的感受，不遮盖重要时刻。只使用允许的源素材，目标时长约 50 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_f7822e2f2f031f00",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_f7822e2f2f031f00.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "51c942e9908928dad2246d947164e3d027ea569ab14cd451617a4bf566bcab41",
+          "duration_seconds": 49.2
         },
         {
           "id": "clip_fd5a10b58fa82cd5",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_fd5a10b58fa82cd5.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "84a63caa362b1d85e05e5ed63bbcc71a25dc01d934926ea839c6acf6c7aeb603",
+          "duration_seconds": 47.666
         }
       ],
-      "fingerprint": "8f5df707186f9c8d318a546fdfeb6eb03027bd4e8bd92c2ae35a8d70a9fe5732",
+      "fingerprint": "f26557ed7ba7bfa4244bcdc000cef6796d04e8d1a9a97e09c77cc132c5917dbd",
       "instruction_summary": "制作约 50 秒的马拉松段落。用音乐、环境声、音效、呼吸和观众声，呈现场地、期待、发力与释放；声音要支撑身体感受，不遮住重要时刻。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -704,28 +705,28 @@
       "revision": 1,
       "title": "多素材音乐混剪",
       "instruction": "使用提供的视觉源片段，制作完整、精致的 45–60 秒音乐驱动混剪。\n\n让指定音乐的结构和画面中可见的运动引导剪辑。从有吸引力的开场，经丰富的发展进入更强的高点，再有意识地释放或结束。变化镜头时长和视觉强度，不使用单一、均匀的快切。优先选择动作清楚、运动有力、对比鲜明、景别有变化且素材多样的镜头。不要机械用完所有片段、重复近似时刻，或为凑时长保留信息稀少的画面。\n\n这是节奏优先的视觉混剪，不要求对白、解释或完整故事。用指定背景音乐带动剪辑，不编造口头内容。只使用提供的源素材。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_75f9ac3bfb8c2148",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_75f9ac3bfb8c2148.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "201206f17239a744874bc68983ab3aae9d357e930345149bec01196be4d4b669",
+          "duration_seconds": 45.5
         },
         {
           "id": "clip_2dd949e804931412",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_2dd949e804931412.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "a1bfb0a30433274e77a520f1a4e6db920e8da94ebc468fa41f5f6143c9ab45ce",
+          "duration_seconds": 48
         }
       ],
-      "fingerprint": "741cea64c340dda5026623a661e9aaa8452c65927aef58a104feab20f1663781",
+      "fingerprint": "c61acd5e4b72ee49845110667a6700c38f16dc6e02f29c92bf38e9c1d54c9e10",
       "instruction_summary": "制作 45–60 秒、以音乐节奏为主的视觉混剪。从吸引人的开场逐步发展到更强的高点，再明确收束；镜头长短和强弱有变化，不要求完整剧情或对白。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -735,28 +736,28 @@
       "revision": 1,
       "title": "课程宣传动作衔接",
       "instruction": "使用提供的准备、行走和出镜片段，制作简洁的课程宣传段落。组织可理解的推进，选择有动机的动作匹配切换，保留有用的源讲话，并使用指定音乐。只使用允许的源素材，目标时长约 55 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_e1562e9e1790f057",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_e1562e9e1790f057.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "99cbb3a3e6a78bc769bb717677939818c10f17e3d168ad7159c561daef52c3e3",
+          "duration_seconds": 55.066
         },
         {
           "id": "clip_a40413df070609a6",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_a40413df070609a6.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "641876e472faf8e23e105e1c3a54f75d933a59623eeba22cbb0a91bd9a1b412c",
+          "duration_seconds": 55
         }
       ],
-      "fingerprint": "db3af44d8fd619ce0a9a4cd8f1d2dc3bebd53095b09f1d2f1013ab89a9b7cb9e",
+      "fingerprint": "dad69a8b86aeffdb69529bb1e4c13a86e6410d88c93d404192591a0631b121e6",
       "instruction_summary": "制作约 55 秒的课程宣传段落。把准备、行走和出镜镜头组织成清楚进程，用有理由的动作衔接切换，保留有用讲话并配指定音乐。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -766,28 +767,28 @@
       "revision": 1,
       "title": "游戏动作混剪",
       "instruction": "使用提供的游戏素材制作 80–90 秒、快节奏且有电影感的动作混剪。以指定音乐作为能量基础，协调画面冲击、运动方向及可用音效，建立清楚的升级和释放。\n\n当动作、冲击或运动过程能产生更清楚的视觉或音乐重音时，可在相应位置使用局部变速或速度曲线，密度和位置由画面及音乐决定。保持动作可读和游戏场景的多样性，不用重复冲击镜头替代变化；正常速度更利于方位、结果或有意义的现场声音时，保持正常速度。只使用允许的源素材。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_9cbaf925bc8835cc",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_9cbaf925bc8835cc.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "c35e7cb526b2d22995a4c56d5cb2567861e741c52b5df5b782437b78fa0287af",
+          "duration_seconds": 87.4
         },
         {
           "id": "clip_184b2f0c39fb3161",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_184b2f0c39fb3161.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "e60b699f5ca646075b8e2143b491ef2035c0aa17b304d277e3a5229d1cc3228b",
+          "duration_seconds": 87.433
         }
       ],
-      "fingerprint": "e5090ac349fa99b3a983962d9401a18631ac50a020307e75604dad03c0194b37",
+      "fingerprint": "43d1beda6637a227ff55ec032de5a5b1cfea7982a6f556c22804a0222c56d777",
       "instruction_summary": "制作 80–90 秒的快节奏电影感游戏混剪，让音乐、冲击、动作方向和可用音效形成递进与释放。动作要看得清，不靠重复撞击镜头堆砌。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -797,28 +798,28 @@
       "revision": 1,
       "title": "自然风景混剪",
       "instruction": "使用提供的自然、旅行、野生动物、水面、山地、森林和城市素材，制作音乐主导的风景混剪。建立视觉推进和节奏变化，以风景画面为主，而非人物故事。\n\n在运动的风景、水流、动物或旅行衔接中，当动作过程能得到更清楚的音乐呼吸、重音或释放时，使用局部变速或速度曲线；形状和位置由素材与音乐决定。具有正面观看价值的沉静环境镜头，应保持正常速度的停留。使用指定背景音乐，只使用允许的源素材，目标时长约 60 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_898ff2d4d8b54755",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_898ff2d4d8b54755.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "89aed37f2d10afeb81d298e4c60d7c575d836da8247507ca4b3bf665424e5f4a",
+          "duration_seconds": 54.934
         },
         {
           "id": "clip_f435b41f432a2fc0",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_f435b41f432a2fc0.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "ba4a87200e46522706ec38e4828cb06e6d80c3b841efc1a6319271e1770b70e0",
+          "duration_seconds": 60.526
         }
       ],
-      "fingerprint": "135b17815b18b3bf4f975edb68021454a0096494fbce350098ec0d71e0ff6eda",
+      "fingerprint": "dbf7de70c17b9eeef95b58e3118d475fdd20ddbab340a7db32780430d6566438",
       "instruction_summary": "制作约 60 秒、以音乐为主的风景混剪。让自然、旅行、动物、水面、山林和城市画面形成推进与节奏变化，以风景为主，不强求人物故事。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -828,28 +829,28 @@
       "revision": 1,
       "title": "华为眼镜旅行宣传片",
       "instruction": "使用提供的城市、沙漠、航拍、车辆和第一人称素材，制作约 144 秒的华为智能眼镜旅行片。指定标准旁白在承载叙事时应保持源顺序，保留完整含义，不重复、拉长或合成。\n\n让产品价值的变化清楚可见：建立旅行者的局限或需求，展示眼镜的介入，再展示带来的体验或好处，最后以产品特色收尾。通过地点和体验形成推进，变化景别及运动，有选择地使用指定音乐和音效来支撑而不是遮盖旁白。只使用允许的源素材。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_10bc28068d8b8f68",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_10bc28068d8b8f68.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "08c036a5911771975a5d7c6ad9bc6eea3ff6f40eac2dfd9acb05c3d853dc8bfe",
+          "duration_seconds": 144
         },
         {
           "id": "clip_a5ec6bea8418dac6",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_a5ec6bea8418dac6.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "9f68e4297b0d41d6dc124cb3bc92a695651fd23af5940e2ea5364cbcbccabdc8",
+          "duration_seconds": 51.24
         }
       ],
-      "fingerprint": "4e0c584487b56178dba55160976a932149ce0b7def05b3e44d84afef5e1f256f",
+      "fingerprint": "bcee5d0404a981ee9eb6d8a4cb20538e6ca20d5255fcda77d21157556ea1f452",
       "instruction_summary": "制作约 2 分 24 秒的智能眼镜旅行宣传片。以指定旁白为主线，讲清旅行者的需求、眼镜如何帮助，以及带来的体验变化，再回到产品收尾。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -859,28 +860,28 @@
       "revision": 1,
       "title": "《肖申克的救赎》电影混剪",
       "instruction": "从《肖申克的救赎》制作 60–90 秒的电影感混剪，讲述安迪从囚禁走向希望与自由的历程。\n\n围绕石锤、《圣经》和“救赎就在其中”的意象建立清楚故事，让线索相互关联，而不是孤立引用。包含电影对“希望”的讨论，并让瑞德的视角帮助情绪推进。原始对白和源旁白可以跨到辅助画面上，只要能使段落更清楚或更动人。\n\n成片应让近期没看过电影的人也能理解：先建立囚禁处境和隐藏计划，再推进到逃脱与真相揭示，最后以释放和真实的自由感收尾。保留完整表达，避免重复画面或台词，不添加合成旁白。\n\n从指定《Nevada》音乐的前段选择合适片段作配乐，让对白、现场声音和音乐有意识地交替占据前景，不能让配乐遮盖关键台词或揭示。横向 16:9，不额外添加黑边，不拉伸或无必要地裁切源画面。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_fe4b40aa3c2d828e",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_fe4b40aa3c2d828e.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "764980ec72583b57254247163677546bd24b2693f9c92de1fb56af0461631cc0",
+          "duration_seconds": 88.25
         },
         {
           "id": "clip_350265270c5dfa0a",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_350265270c5dfa0a.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "5d54ab9c407c68ec430563d71accb2f598274f4ed272132ad5edd7d84fcbfbe6",
+          "duration_seconds": 88.4
         }
       ],
-      "fingerprint": "39f1583d5e4b4c47d3a522af0bd6c0b8e5d37ffac308714b56164670cf8c4508",
+      "fingerprint": "6b1ebbd050b5ee7acdfc121625e2492aa18faebc1b86b1b0e13ead1685c87490",
       "instruction_summary": "制作 60–90 秒的电影混剪，围绕安迪从囚禁走向希望与自由的历程，将石锤、《圣经》和“救赎就在其中”的线索连起来。即使没近期看过电影，也应能看懂铺垫、逃脱、揭示与释放。",
       "instruction_note": "本组保留电影原声。请以两条成片实际交代的信息和观感判断，不用对电影的记忆替成片补足缺失内容。",
       "instruction_language": "zh-CN"
@@ -890,28 +891,28 @@
       "revision": 1,
       "title": "现场演唱多机位",
       "instruction": "使用提供的同步现场演唱机位，制作完整、精致的全曲多机位剪辑。\n\n保留完整音乐表演，以质量最合适的一条连续现场录音作为声音主线。通过角度切换帮助看清表演者、乐句、反应、器乐时刻和能量变化。优先在乐句边界或明确表演动作处作有动机的切换，给手势与情绪足够时间。每次切换都保持同步和空间方位。\n\n避免任意快切、重复近似角度、错误口型、声画脱节，或遮住重要演唱与器乐时刻的画面。只使用提供的机位及现场原声，不添加标题、字幕、旁白、外部音乐或变速。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_1d1e628301c9e376",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_1d1e628301c9e376.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "025733cbc38be491b594b0f9d73a6e96cf1a3ecbe71108290a8906f18b95b47c",
+          "duration_seconds": 207
         },
         {
           "id": "clip_4450f062f47086b9",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_4450f062f47086b9.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "dff9269740a364a4d1a564dbed7596d98552cbfbe26fc403bb041e962afeacba",
+          "duration_seconds": 190.667
         }
       ],
-      "fingerprint": "bc37e0562cddca186127056a30c21764b0df73bee5d509bbea51710b2caafa25",
+      "fingerprint": "d0217d5552c0a6d9c8c92204d3296f9c0bac9192640cca15def80cab2233e85b",
       "instruction_summary": "把同步现场机位剪成完整歌曲表演，保留连续音乐与同步关系。切换应帮助看清歌手、乐句、反应和乐器，给动作及情绪留下看清的时间。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -921,28 +922,28 @@
       "revision": 1,
       "title": "智云稳定器开箱",
       "instruction": "使用提供的智云稳定器素材，制作简洁的开箱剪辑。交代包装和产品，通过清楚的细节及操作镜头逐步展示稳定器，建立利落节奏和有声音意识的转场，并以产品收尾。\n\n在不含讲话的产品运动、揭示或冲击中，只有动作过程能让操作或节奏重音更清楚时，使用局部变速或速度曲线；保护产品可读性和有意义的现场声音时，保持正常速度，不把变速当填充。有选择地使用指定音效，强化具体的揭示、操作或转场事件。\n\n只使用允许的源素材，目标时长约 29 秒。横向 16:9，不额外加黑边，不拉伸或无必要地裁切源画面。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_b1d9de79a32b78c8",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_b1d9de79a32b78c8.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "711cfcf9be3f5c4210f610628fce1c85a830a40265785ba55882b2b07f94fdc3",
+          "duration_seconds": 28.734
         },
         {
           "id": "clip_d9e51614cbe9e4d5",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_d9e51614cbe9e4d5.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "5ad81417b83bbb0402e9f82ef3b21aea8d7669382bd35322a859f4f839ab4cc6",
+          "duration_seconds": 29
         }
       ],
-      "fingerprint": "6073503ae6c97243e456a80a427f0b4c011eae61a5fbd603ceb8c6c12fc135e4",
+      "fingerprint": "5aacae8f721e144d1bd43360c994be3d16257cc861c7f7a352da401920e4146a",
       "instruction_summary": "制作约 29 秒的产品开箱短片。交代包装与产品，用清楚的细节和操作镜头展示稳定器，通过有声音意识的转场建立利落节奏，最后回到产品。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -952,28 +953,28 @@
       "revision": 1,
       "title": "食物质感节奏混剪",
       "instruction": "使用提供的特写与质感镜头，制作紧凑的食物混剪。在食材、准备过程、颜色和成品之间建立视觉变化，并使切换配合指定音乐。\n\n在不含讲话的准备或质感变化中，当动作过程能让音乐重音或物理变化更清楚时，使用局部变速或速度曲线，密度和位置由画面与音乐决定。需要看清细节时，保留正常速度的产品停留。只使用允许的源素材，目标时长约 25–30 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_f126f2878875b67d",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_f126f2878875b67d.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "4c10cbe26960e8cdbd42e8cdc21ab50a3529b250bde8d253fe93d5429311ff02",
+          "duration_seconds": 45.52
         },
         {
           "id": "clip_110892f899b99cd9",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_110892f899b99cd9.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "3df166f2e98b216986ca106a93fa8e7b70197ce2e40967583bf309d3a72cc1d8",
+          "duration_seconds": 25.1
         }
       ],
-      "fingerprint": "319c4407a1cd6d71573e0c96a661fe8ef48186c39deed5055e6c465e14f38265",
+      "fingerprint": "9cc953a53d19d05406986053f1be3fdd0fe63c1531a219bf27a5fe90fecc2ecf",
       "instruction_summary": "制作约 25–30 秒的食物混剪，变化食材、制作、颜色和成品画面，配合音乐安排切换；局部变速服务于质感变化和重音，产品细节要看得清。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
@@ -983,28 +984,28 @@
       "revision": 1,
       "title": "电动车宣传片",
       "instruction": "使用提供的骑行、风景、目的地和产品细节素材，制作完整、精致的电动车宣传片。以指定标准旁白的原顺序作为叙事主线，不重复、拉长或合成旁白。交代地点和产品，让旅程及功能特点形成清楚推进，变化景别与运动并有意识地收尾。\n\n从开场到结束保持支撑表达的音乐发展，三首指定曲目用于不同部分：欢快音乐用于户外及旅程介绍，摇滚音乐用于白天骑行，昂扬音乐用于夜间骑行和收尾。随画面阶段选择合适片段及连贯交接，旁白出现时让音乐低于人声。只使用允许的源素材，目标时长约 2 分 30 秒。",
-      "ready": false,
+      "ready": true,
       "clips": [
         {
           "id": "clip_5ff1c6758f0aeef1",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_5ff1c6758f0aeef1.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "3aae8b33e57d2625613f5b377b5b60649c04d0a432a987a7d5bca73c6171530c",
+          "duration_seconds": 48.305
         },
         {
           "id": "clip_1f14760d9ab7a891",
           "media": {
             "type": "video",
-            "url": ""
+            "url": "./media/clip_1f14760d9ab7a891.mp4"
           },
-          "sha256": "",
-          "duration_seconds": null
+          "sha256": "78efd43b48d9fb3a90077d2b43358cad43199b972eca7baf08d358def60e019f",
+          "duration_seconds": 140
         }
       ],
-      "fingerprint": "578fc910ac98d029092b038ca50131c12d7e8b9f968bd9905ecc1f60d23485ea",
+      "fingerprint": "9263875e282ebf9644214dabcecc809e37a873af2e2192e5e6d06f1374864c2c",
       "instruction_summary": "制作约 2 分 30 秒的电动车宣传片，以指定旁白为顺序主线，展现地点、旅程和产品特点。三段指定音乐分别支撑户外启程、白天骑行、夜间骑行与收尾，旁白时音乐降低音量。",
       "instruction_note": "",
       "instruction_language": "zh-CN"

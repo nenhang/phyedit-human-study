@@ -58,6 +58,10 @@ export function validGoogleEndpoint(value) {
   } catch { return false; }
 }
 
+export function collectionOpen(study) {
+  return study.collection.accepting_responses === true && validGoogleEndpoint(study.collection.endpoint);
+}
+
 export async function sha256(value) {
   const bytes = new TextEncoder().encode(typeof value === 'string' ? value : JSON.stringify(value));
   const digest = await globalThis.crypto.subtle.digest('SHA-256', bytes);

@@ -1,4 +1,4 @@
-import { METRICS, assignmentsFor, participantFromCode, pairReady, emptyDraft, draftComplete, draftKey, mediaUrl, validGoogleEndpoint, sha256, newRecord } from './study-core.mjs';
+import { METRICS, assignmentsFor, participantFromCode, pairReady, emptyDraft, draftComplete, draftKey, mediaUrl, collectionOpen, sha256, newRecord } from './study-core.mjs';
 
 const app = document.querySelector('#app');
 const metrics = {
@@ -81,7 +81,7 @@ function renderWorkspace() {
   document.querySelectorAll('.task-tab').forEach(function (button) { button.addEventListener('click', function () { if (busy) return; currentIndex = Number(button.dataset.index); renderWorkspace(); }); });
   el('switch-reviewer').addEventListener('click', function () { if (busy) return; try { sessionStorage.removeItem(study.id + ':invitation'); } catch {} invitation = ''; participantId = null; renderEntry(); });
   el('export-all').addEventListener('click', exportBackup);
-  if (!validGoogleEndpoint(study.collection.endpoint)) el('workspace-notice').innerHTML = '<div class="notice neutral">收集通道尚未开放。可以查看任务、保存本地草稿和下载备份；正式提交会在通道开放后启用。</div>';
+  if (!collectionOpen(study)) el('workspace-notice').innerHTML = '<div class="notice neutral">当前开放视频预览，正式提交尚未开放。可以观看视频、保存本地草稿和下载备份；请等待组织者通知后再正式评审。</div>';
   if (!localStorageWorks) el('workspace-notice').innerHTML += '<div class="notice">浏览器无法保存草稿。离开前请下载备份，避免丢失。</div>';
   renderPair(assignment);
 }
@@ -163,9 +163,9 @@ function updateSubmit(assignment) {
   const draft = draftFor(assignment);
   const button = el('submit-review');
   if (!button) return;
-  button.disabled = busy || Boolean(draft.receipt) || !draftComplete(draft) || !validGoogleEndpoint(study.collection.endpoint);
+  button.disabled = busy || Boolean(draft.receipt) || !draftComplete(draft) || !collectionOpen(study);
   button.textContent = draft.receipt ? '本组已提交' : busy ? '正在确认接收…' : '提交本组';
-  if (!draft.receipt && !validGoogleEndpoint(study.collection.endpoint)) setStatus('收集通道尚未开放，当前可保存草稿和下载备份。');
+  if (!draft.receipt && !collectionOpen(study)) setStatus('正式提交尚未开放，当前可保存草稿和下载备份。');
 }
 
 function renderReceipt(assignment) {
@@ -185,7 +185,7 @@ function renderReceipt(assignment) {
 async function submitReview(assignment) {
   const draft = draftFor(assignment);
   if (busy || !draftComplete(draft) || draft.receipt || !pairReady(assignment.pair)) return;
-  if (!validGoogleEndpoint(study.collection.endpoint)) { setStatus('收集通道尚未开放，草稿已保留。'); return; }
+  if (!collectionOpen(study)) { setStatus('正式提交尚未开放，草稿已保留。'); return; }
   busy = true;
   updateSubmit(assignment);
   document.querySelectorAll('[data-score], [data-preference], #reason, .task-tab, #switch-reviewer').forEach(function (element) { element.disabled = true; });
