@@ -4,7 +4,7 @@
   "title": "成片盲评",
   "rubric_version": "task_flow_impact_av_0_to_4",
   "collection": {
-    "endpoint": ""
+    "endpoint": "https://script.google.com/macros/s/AKfycbzyhvHOPGqJlNj3OKeLJuA50auUWqvhe_1zQAHqiKAqpbf6fDtLGLJ3Kmt4mvzBmkb7Pg/exec"
   },
   "assignments": {
     "R01": [
