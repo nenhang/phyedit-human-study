@@ -1,6 +1,6 @@
 export const METRICS = ['task', 'flow', 'impact', 'av'];
-export const PREFERENCES = ['A', 'tie', 'B', 'unable'];
-export const SCORE_VALUES = [0, 1, 2, 3, 4, 'unable'];
+export const PREFERENCES = ['A', 'tie', 'B'];
+export const SCORE_VALUES = [0, 1, 2, 3, 4];
 
 export function participantFromCode(value) {
   const match = String(value || '').trim().match(/^(R0[1-8])-[A-Za-z0-9_-]{16,100}$/);
