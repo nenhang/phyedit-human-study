@@ -178,7 +178,7 @@ function showSubmissionHelp(waiting = false) {
   const message = document.createElement('p');
   message.textContent = waiting
     ? '正在等待 Google 确认，通常最多等待 45 秒。请保持当前页面在前台。'
-    : '未收到回执时，答案可能已经入表。请保留原答案重试以核对接收状态；也可以下载备份交给组织者。';
+    : '请点击“下载答案备份”，将下载的 JSON 文件通过原来的问卷邀请渠道发给问卷发布者，协助补交。文件包含当前已填写的各组答案，不用重新评分。';
   container.append(message);
   if (waiting) {
     const cancel = document.createElement('button');
@@ -190,7 +190,7 @@ function showSubmissionHelp(waiting = false) {
   }
   const backup = document.createElement('button');
   backup.type = 'button';
-  backup.className = 'button secondary';
+  backup.className = waiting ? 'button secondary' : 'button';
   backup.textContent = '下载答案备份';
   backup.addEventListener('click', exportBackup);
   const connection = document.createElement('a');
@@ -272,7 +272,7 @@ function sendToGoogle(record) {
     const checkDeadline = function () {
       const elapsed = Date.now() - started;
       if (elapsed >= SUBMISSION_WAIT_MS) {
-        finish(new Error('45 秒内未收到接收确认。请检查当前浏览器能否访问 Google，答案已保留；保持答案不变后重试会核对同一笔提交。'));
+        finish(new Error('45 秒内未收到接收确认，答案已保留。请下载答案备份文件，发给问卷发布者协助补交，无需重新评分。'));
       } else if (el('submit-review')) {
         el('submit-review').textContent = '正在确认接收…（' + Math.floor(elapsed / 1000) + ' 秒）';
       }
