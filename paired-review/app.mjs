@@ -15,6 +15,8 @@ let profile = { consent: false, editing_experience: 'unspecified' };
 let currentIndex = 0;
 let localStorageWorks = true;
 let busy = false;
+let cancelSubmission = null;
+const SUBMISSION_WAIT_MS = 45000;
 const drafts = new Map();
 
 const escapeHtml = function (text) { return String(text ?? '').replace(/[&<>"']/g, function (char) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]; }); };
@@ -168,6 +170,38 @@ function updateSubmit(assignment) {
   if (!draft.receipt && !collectionOpen(study)) setStatus('正式提交尚未开放，当前可保存草稿和下载备份。');
 }
 
+function showSubmissionHelp(waiting = false) {
+  el('submission-help')?.remove();
+  const container = document.createElement('div');
+  container.id = 'submission-help';
+  container.className = 'notice neutral';
+  const message = document.createElement('p');
+  message.textContent = waiting
+    ? '正在等待 Google 确认，通常最多等待 45 秒。请保持当前页面在前台。'
+    : '未收到回执时，答案可能已经入表。请保留原答案重试以核对接收状态；也可以下载备份交给组织者。';
+  container.append(message);
+  if (waiting) {
+    const cancel = document.createElement('button');
+    cancel.type = 'button';
+    cancel.className = 'button secondary';
+    cancel.textContent = '停止等待，保留答案';
+    cancel.addEventListener('click', function () { cancelSubmission?.(); });
+    container.append(cancel, document.createTextNode(' '));
+  }
+  const backup = document.createElement('button');
+  backup.type = 'button';
+  backup.className = 'button secondary';
+  backup.textContent = '下载答案备份';
+  backup.addEventListener('click', exportBackup);
+  const connection = document.createElement('a');
+  connection.href = study.collection.endpoint;
+  connection.target = '_blank';
+  connection.rel = 'noopener noreferrer';
+  connection.textContent = '检查 Google 连接 ↗';
+  container.append(backup, document.createTextNode(' '), connection);
+  el('submit-status').after(container);
+}
+
 function renderReceipt(assignment) {
   const draft = draftFor(assignment);
   const date = new Date(draft.receipt.received_at).toLocaleString('zh-CN', { hour12: false });
@@ -196,6 +230,7 @@ async function submitReview(assignment) {
     if (!previous || contentOf(previous) !== contentOf(fresh)) draft.pending_record = fresh;
     persist(assignment);
     setStatus('正在提交，等待收集端确认。请先保留当前页面。');
+    showSubmissionHelp(true);
     const receipt = await sendToGoogle(draft.pending_record);
     draft.receipt = receipt;
     persist(assignment);
@@ -206,35 +241,73 @@ async function submitReview(assignment) {
     busy = false;
     renderWorkspace();
     setStatus(error.message || '未收到接收确认，草稿已保留。可以稍后重试或下载备份。', 'error');
+    showSubmissionHelp();
   }
 }
 
-async function sendToGoogle(record) {
+function sendToGoogle(record) {
   const raw = JSON.stringify(record);
-  const payloadHash = await sha256(raw);
-  const authHash = await sha256(invitation);
-  const channel = globalThis.crypto.randomUUID();
   return new Promise(function (resolve, reject) {
-    const frame = document.createElement('iframe');
-    frame.name = 'review-receipt-' + channel;
-    frame.className = 'transport-frame';
-    frame.title = '答案提交回执';
-    const form = document.createElement('form');
-    form.method = 'POST'; form.action = study.collection.endpoint; form.target = frame.name; form.hidden = true;
-    for (const [name,value] of Object.entries({ payload: raw, auth_hash: authHash, channel })) { const input = document.createElement('input'); input.type = 'hidden'; input.name = name; input.value = value; form.append(input); }
-    const cleanup = function () { clearTimeout(timer); window.removeEventListener('message', listener); form.remove(); frame.remove(); };
+    const started = Date.now();
+    let settled = false;
+    let frame;
+    let form;
+    let payloadHash;
+    let channel;
+    const cancel = function () { finish(new Error('已停止等待，答案已保留；这不会撤销可能已入表的提交。请保持答案不变后重试，或下载备份。')); };
+    const cleanup = function () {
+      clearTimeout(timer); clearInterval(progress);
+      window.removeEventListener('message', listener);
+      window.removeEventListener('pageshow', checkDeadline);
+      document.removeEventListener('visibilitychange', checkDeadline);
+      form?.remove(); frame?.remove();
+      if (cancelSubmission === cancel) cancelSubmission = null;
+    };
+    const finish = function (error, receipt) {
+      if (settled) return;
+      settled = true;
+      cleanup();
+      if (error) reject(error); else resolve(receipt);
+    };
+    const checkDeadline = function () {
+      const elapsed = Date.now() - started;
+      if (elapsed >= SUBMISSION_WAIT_MS) {
+        finish(new Error('45 秒内未收到接收确认。请检查当前浏览器能否访问 Google，答案已保留；保持答案不变后重试会核对同一笔提交。'));
+      } else if (el('submit-review')) {
+        el('submit-review').textContent = '正在确认接收…（' + Math.floor(elapsed / 1000) + ' 秒）';
+      }
+    };
     const listener = function (event) {
       let trustedOrigin = false;
       try { const origin = new URL(event.origin); trustedOrigin = origin.protocol === 'https:' && (origin.hostname === 'script.google.com' || origin.hostname.endsWith('.googleusercontent.com')); } catch {}
       if (!trustedOrigin || event.data?.type !== 'video-review-receipt' || event.data.channel !== channel) return;
       const result = event.data;
-      if (result.ok && result.submission_id === record.submission_id && result.payload_sha256 === payloadHash && result.received_at) { cleanup(); resolve(result); }
-      else if (!result.ok) { cleanup(); reject(new Error(result.message || '收集端未接收本次答案，草稿已保留。')); }
+      if (result.ok && result.submission_id === record.submission_id && result.payload_sha256 === payloadHash && result.received_at) finish(null, result);
+      else if (!result.ok) finish(new Error(result.message || '收集端未接收本次答案，草稿已保留。'));
+      else finish(new Error('接收回执与本组答案不一致，尚未确认成功。请保留备份并联系组织者。'));
     };
-    const timer = setTimeout(function () { cleanup(); reject(new Error('暂未收到接收确认。草稿已保留，重试会使用相同提交编号，避免重复入账。')); }, 45000);
+    const timer = setTimeout(checkDeadline, SUBMISSION_WAIT_MS);
+    const progress = setInterval(checkDeadline, 1000);
+    cancelSubmission = cancel;
+    window.addEventListener('pageshow', checkDeadline);
+    document.addEventListener('visibilitychange', checkDeadline);
     window.addEventListener('message', listener);
-    document.body.append(frame, form);
-    form.submit();
+    // Include hashing in the same wait limit, and never send after cancellation.
+    (async function () {
+      payloadHash = await sha256(raw);
+      const authHash = await sha256(invitation);
+      if (settled) return;
+      channel = globalThis.crypto.randomUUID();
+      frame = document.createElement('iframe');
+      frame.name = 'review-receipt-' + channel;
+      frame.className = 'transport-frame';
+      frame.title = '答案提交回执';
+      form = document.createElement('form');
+      form.method = 'POST'; form.action = study.collection.endpoint; form.target = frame.name; form.hidden = true;
+      for (const [name,value] of Object.entries({ payload: raw, auth_hash: authHash, channel })) { const input = document.createElement('input'); input.type = 'hidden'; input.name = name; input.value = value; form.append(input); }
+      document.body.append(frame, form);
+      form.submit();
+    })().catch(function (error) { finish(error); });
   });
 }
 
