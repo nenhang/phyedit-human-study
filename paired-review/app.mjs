@@ -112,6 +112,12 @@ function renderPair(assignment) {
     return '<article class="card video-card"><div class="video-heading"><b>成片 ' + slot + '</b><span>完整成片 · 可回放</span></div><div class="video-surface">' + player + '</div><div class="video-footer"><span id="play-state-' + slot + '">' + (clip.media.type === 'drive' ? '在播放器中观看完整成片' : '请完整观看') + '</span><a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">单独打开 ↗</a></div></article>';
   }).join('') + '</div><p class="playback-note">建议使用耳机。两条视频按 A → B 顺序完整观看；播放或语言理解有困难时，请先保存草稿并联系组织者，不要因此给 0 分。</p><div class="card preference-card"><p class="section-label">总体偏好</p><h2>结合任务要求，你更愿意采用哪条成片？</h2><p>先给整体判断，再分别评分。两条同样好或同样差，都可以选“基本相当”。</p><div class="preference-options">' + Object.entries(preferenceNames).map(function ([value, name]) { return '<button class="choice-button' + (draft.preference === value ? ' selected' : '') + '" type="button" data-preference="' + value + '" aria-pressed="' + (draft.preference === value) + '"' + (draft.receipt ? ' disabled' : '') + '>' + name + '</button>'; }).join('') + '</div><div class="preference-summary" id="preference-summary"></div></div><section id="ratings-section"></section>';
   content.querySelector('.brief-tag').textContent = '任务要求';
+  if (pair.revision > 1) {
+    const notice = document.createElement('p');
+    notice.className = 'notice neutral';
+    notice.textContent = '本组素材已更新。若已提交过旧版答案，旧记录会保留，请联系问卷发布者确认是否需要评新版。';
+    content.prepend(notice);
+  }
   content.querySelector('.preference-card .section-label').textContent = '总体偏好';
   document.querySelectorAll('[data-preference]').forEach(function (button) { button.addEventListener('click', function () {
     draft.preference = button.dataset.preference;
@@ -165,9 +171,10 @@ function updateSubmit(assignment) {
   const draft = draftFor(assignment);
   const button = el('submit-review');
   if (!button) return;
-  button.disabled = busy || Boolean(draft.receipt) || !draftComplete(draft) || !collectionOpen(study);
+  button.disabled = busy || Boolean(draft.receipt) || !draftComplete(draft) || !collectionOpen(study, assignment.pair_id);
   button.textContent = draft.receipt ? '本组已提交' : busy ? '正在确认接收…' : '提交本组';
   if (!draft.receipt && !collectionOpen(study)) setStatus('正式提交尚未开放，当前可保存草稿和下载备份。');
+  else if (!draft.receipt && !collectionOpen(study, assignment.pair_id)) setStatus('本组新素材的提交通道正在同步，当前可保存草稿和下载备份；其他组可正常提交。');
 }
 
 function showSubmissionHelp(waiting = false) {
@@ -219,7 +226,7 @@ function renderReceipt(assignment) {
 async function submitReview(assignment) {
   const draft = draftFor(assignment);
   if (busy || !draftComplete(draft) || draft.receipt || !pairReady(assignment.pair)) return;
-  if (!collectionOpen(study)) { setStatus('正式提交尚未开放，草稿已保留。'); return; }
+  if (!collectionOpen(study, assignment.pair_id)) { setStatus('本组提交通道暂未开放，草稿已保留。'); return; }
   busy = true;
   updateSubmit(assignment);
   document.querySelectorAll('[data-score], [data-preference], #reason, .task-tab, #switch-reviewer').forEach(function (element) { element.disabled = true; });

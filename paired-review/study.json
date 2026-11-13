@@ -5,7 +5,12 @@
   "rubric_version": "task_flow_impact_av_0_to_4",
   "collection": {
     "endpoint": "https://script.google.com/macros/s/AKfycbzyhvHOPGqJlNj3OKeLJuA50auUWqvhe_1zQAHqiKAqpbf6fDtLGLJ3Kmt4mvzBmkb7Pg/exec",
-    "accepting_responses": true
+    "accepting_responses": true,
+    "pending_pair_ids": [
+      "P11",
+      "P13",
+      "P23"
+    ]
   },
   "assignments": {
     "R01": [
@@ -31,8 +36,8 @@
       },
       {
         "pair_id": "P13",
-        "A": "clip_f921c8bb53e10e9c",
-        "B": "clip_4fa40abf985ea9ba"
+        "A": "clip_f655d5c9b1e91e50",
+        "B": "clip_9cada98540cc1018"
       },
       {
         "pair_id": "P05",
@@ -117,8 +122,8 @@
       },
       {
         "pair_id": "P11",
-        "A": "clip_1ecfb8ad147c691c",
-        "B": "clip_f0b4036d12923393"
+        "A": "clip_842901f3369c9529",
+        "B": "clip_9bc64b24685d9551"
       },
       {
         "pair_id": "P08",
@@ -154,8 +159,8 @@
       },
       {
         "pair_id": "P13",
-        "A": "clip_4fa40abf985ea9ba",
-        "B": "clip_f921c8bb53e10e9c"
+        "A": "clip_9cada98540cc1018",
+        "B": "clip_f655d5c9b1e91e50"
       },
       {
         "pair_id": "P07",
@@ -164,8 +169,8 @@
       },
       {
         "pair_id": "P23",
-        "A": "clip_110892f899b99cd9",
-        "B": "clip_f126f2878875b67d"
+        "A": "clip_4a4668c2ddaca7e4",
+        "B": "clip_d757779e18e775bc"
       }
     ],
     "R06": [
@@ -240,8 +245,8 @@
       },
       {
         "pair_id": "P23",
-        "A": "clip_f126f2878875b67d",
-        "B": "clip_110892f899b99cd9"
+        "A": "clip_d757779e18e775bc",
+        "B": "clip_4a4668c2ddaca7e4"
       },
       {
         "pair_id": "P01",
@@ -260,8 +265,8 @@
       },
       {
         "pair_id": "P11",
-        "A": "clip_f0b4036d12923393",
-        "B": "clip_1ecfb8ad147c691c"
+        "A": "clip_9bc64b24685d9551",
+        "B": "clip_842901f3369c9529"
       }
     ]
   },
@@ -578,32 +583,32 @@
     },
     {
       "id": "P11",
-      "revision": 1,
-      "title": "奔驰汽车广告",
-      "instruction": "使用提供的车外、车内、驾驶者、历史建筑和夜间驾驶素材，制作完整、精致的奔驰电视广告。以指定标准旁白的原顺序作为叙事主线，不重复、拉长或合成旁白。让产品亮相、地点、驾驶体验、车内细节和明确的品牌收尾形成有高级感的推进。\n\n对不含讲话的驾驶、产品细节或运动时刻，只有动作过程能支撑高级感或音乐重音时，才使用局部变速或速度曲线，处理由画面和音乐决定。源声音、旁白和同步关系承载意义时，应予以保护。有选择地使用指定背景音乐和音效，只使用允许的源素材，目标时长约 60 秒。",
+      "revision": 2,
+      "title": "MacBook 产品评测",
+      "instruction": "使用提供的去停顿口播主素材及产品辅助画面，制作 16:9 的科技产品评测，时长约 205–212 秒。\n\n评测对象为 MacBook Neo，对比对象为 MacBook Air，存储版本为 512GB 与 256GB；Touch ID、Taptic Engine、Force Touch、sRGB 与 Display P3 等术语用于理解源讲话，不额外规定剪辑方式。\n\n以主讲人声音为连续的叙事主线，保留完整论述、源顺序、说话人身份和清楚的人声，不为增加画面密度而拆散、重排、改写、替换或删除对白。\n\n当产品细节、对比、使用场景、物理操作或评价需要说明时，加入简洁且相关的辅助镜头；表情、个人判断、强调或衔接需要时回到讲述者。避免不相关或重复的覆盖，也避免长时间离开主讲或在有用辅助画面存在时长期只用口播。保持自然语句和观点边界。可选背景音乐应低于讲话，人声清晰优先。只使用提供的源素材。",
       "ready": true,
       "clips": [
         {
-          "id": "clip_f0b4036d12923393",
+          "id": "clip_9bc64b24685d9551",
           "media": {
             "type": "video",
-            "url": "./media/clip_f0b4036d12923393.mp4"
+            "url": "./media/clip_9bc64b24685d9551.mp4"
           },
-          "sha256": "89bd0cf78a9c9aab07d6acbab0b6335aa2d739beaa093d25126f20b4e68b3478",
-          "duration_seconds": 58.734
+          "sha256": "5b60d4c062217554a64e2d7462dc3c10b85905621399c8c65fcff6f8eb0e5f71",
+          "duration_seconds": 210.7
         },
         {
-          "id": "clip_1ecfb8ad147c691c",
+          "id": "clip_842901f3369c9529",
           "media": {
             "type": "video",
-            "url": "./media/clip_1ecfb8ad147c691c.mp4"
+            "url": "./media/clip_842901f3369c9529.mp4"
           },
-          "sha256": "315bdee2afaf66a17ff8764d5f1b610930f804dea44f449017458e8cb3b3b4f6",
-          "duration_seconds": 43.92
+          "sha256": "8f8ec73eff8eb1f06284e542a071c6d2887e4994c5cae4a978849e0837835606",
+          "duration_seconds": 212.046
         }
       ],
-      "fingerprint": "5b29e9b86fb945814090e58c1f05170dba43bab7a89e2ebe70a43b4967757aa4",
-      "instruction_summary": "制作约 60 秒的奔驰广告，以指定旁白的原顺序为主线，串起产品亮相、环境、驾驶体验、车内细节和品牌收尾，保持清楚的人声与高级感。",
+      "fingerprint": "5aacb3d3e130000b6c3097df243b0bf01e3864c4d3adb6a5494648eefacf1a38",
+      "instruction_summary": "制作约 205–212 秒的横屏产品评测。保留完整、清楚且顺序连贯的主讲内容，用相关产品和使用画面支撑观点，在个人判断或情绪需要时回到讲述者。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
     },
@@ -640,32 +645,32 @@
     },
     {
       "id": "P13",
-      "revision": 1,
-      "title": "雪场运动混剪",
-      "instruction": "使用提供的片段制作紧凑、有能量的雪上运动混剪，以指定背景音乐作为节奏基础。通过不同运动动作建立推进，跨切换保持运动方向，变化景别和动作阶段。\n\n在不含讲话的助跑、起跳、空中、落地或镜头运动过程中，当动作弧线能提升冲击力、动作清楚程度或音乐表达时，使用局部变速或速度曲线，密度与位置由素材和音乐决定。正常速度更利于方位、结果或动作可读时，保持正常速度。只使用允许的源素材，目标时长约 15 秒。",
+      "revision": 2,
+      "title": "影豹混动汽车混剪",
+      "instruction": "使用提供的影豹混动车辆素材，制作约 24 秒、简洁且节奏利落的汽车产品混剪。清楚交代车辆，让行驶动作与外观细节逐步展开，镜头切换配合指定的 The Runner 背景音乐，并有意识地收尾。\n\n对不含讲话的车辆运动或细节揭示，只有当动作过程能加强到达、经过或音乐重音时，才使用局部变速或速度曲线，具体处理由素材与音乐决定。正常速度更利于产品辨识、方位或动作结果时，保留正常速度。只使用允许的源素材。",
       "ready": true,
       "clips": [
         {
-          "id": "clip_4fa40abf985ea9ba",
+          "id": "clip_9cada98540cc1018",
           "media": {
             "type": "video",
-            "url": "./media/clip_4fa40abf985ea9ba.mp4"
+            "url": "./media/clip_9cada98540cc1018.mp4"
           },
-          "sha256": "902660d54345fcf970667511aa9958c528cb971126f2187e3d3935d43706b1e2",
-          "duration_seconds": 42.774
+          "sha256": "f2822d4a7ee8031e23ef643f8829f16c87e533ad26fc23f144dd7a10c5eb736e",
+          "duration_seconds": 25.359
         },
         {
-          "id": "clip_f921c8bb53e10e9c",
+          "id": "clip_f655d5c9b1e91e50",
           "media": {
             "type": "video",
-            "url": "./media/clip_f921c8bb53e10e9c.mp4"
+            "url": "./media/clip_f655d5c9b1e91e50.mp4"
           },
-          "sha256": "171720f8abd9fed11240738e388e8b9ffa016d0c8c28e63221839ee1330a992e",
-          "duration_seconds": 12.934
+          "sha256": "b69e42822deacea396b0e484314b2d57bd22cb00d2148b35d83bbb27d612df88",
+          "duration_seconds": 23.934
         }
       ],
-      "fingerprint": "5cba319eeb449ba0c092f674afc6df012882d282a54f882c82e05ca8e157af48",
-      "instruction_summary": "制作约 15 秒的高能量雪上运动混剪，用音乐、不同动作和景别建立动势，保持方向和动作可读；变速只在有助于动作或音乐表达时使用。",
+      "fingerprint": "e62b67d6b2c903ba79d958b821d5c9e4e2a9171811ebce3b07fc05459c4e04b7",
+      "instruction_summary": "制作约 24 秒、节奏利落的汽车产品混剪。交代车辆，让行驶动作与外观细节形成清楚推进，配合指定音乐切换，并明确收尾。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
     },
@@ -950,32 +955,32 @@
     },
     {
       "id": "P23",
-      "revision": 1,
-      "title": "食物质感节奏混剪",
-      "instruction": "使用提供的特写与质感镜头，制作紧凑的食物混剪。在食材、准备过程、颜色和成品之间建立视觉变化，并使切换配合指定音乐。\n\n在不含讲话的准备或质感变化中，当动作过程能让音乐重音或物理变化更清楚时，使用局部变速或速度曲线，密度和位置由画面与音乐决定。需要看清细节时，保留正常速度的产品停留。只使用允许的源素材，目标时长约 25–30 秒。",
+      "revision": 2,
+      "title": "雪碧产品节奏混剪",
+      "instruction": "使用提供的雪碧产品镜头，制作约 15–20 秒、紧凑且有能量的产品展示混剪。强调产品辨识、动作连续、画面变化和节奏推进。使用指定的 Curly Wurly 背景音乐，让部分切点呼应能听到的重音。\n\n对不含讲话的产品、液体或运动镜头，只有当可读的动作过程能加强冲击、揭示或音乐重音时，才使用局部变速或速度曲线，形状和密度由素材与音乐决定。需要看清产品时，保持正常速度。只使用允许的源素材。",
       "ready": true,
       "clips": [
         {
-          "id": "clip_f126f2878875b67d",
+          "id": "clip_d757779e18e775bc",
           "media": {
             "type": "video",
-            "url": "./media/clip_f126f2878875b67d.mp4"
+            "url": "./media/clip_d757779e18e775bc.mp4"
           },
-          "sha256": "4c10cbe26960e8cdbd42e8cdc21ab50a3529b250bde8d253fe93d5429311ff02",
-          "duration_seconds": 45.52
+          "sha256": "5915fd6db4ad684c0d878899beca42bdf1d9633d74573cf815d83304ffd9681f",
+          "duration_seconds": 18.646
         },
         {
-          "id": "clip_110892f899b99cd9",
+          "id": "clip_4a4668c2ddaca7e4",
           "media": {
             "type": "video",
-            "url": "./media/clip_110892f899b99cd9.mp4"
+            "url": "./media/clip_4a4668c2ddaca7e4.mp4"
           },
-          "sha256": "3df166f2e98b216986ca106a93fa8e7b70197ce2e40967583bf309d3a72cc1d8",
-          "duration_seconds": 25.1
+          "sha256": "de0b67e151ff51342522433e17ffe87d73c02ff41441245291cd3be4a27055d5",
+          "duration_seconds": 17.634
         }
       ],
-      "fingerprint": "9cc953a53d19d05406986053f1be3fdd0fe63c1531a219bf27a5fe90fecc2ecf",
-      "instruction_summary": "制作约 25–30 秒的食物混剪，变化食材、制作、颜色和成品画面，配合音乐安排切换；局部变速服务于质感变化和重音，产品细节要看得清。",
+      "fingerprint": "e5b84e2e7b3eea7f8dca3f78d03b31933299d995583c045913c80aa37b734d3b",
+      "instruction_summary": "制作 15–20 秒的紧凑产品混剪。保持产品清楚、动作连续与画面变化，让指定音乐的重音支撑镜头推进。",
       "instruction_note": "",
       "instruction_language": "zh-CN"
     },

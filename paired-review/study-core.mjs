@@ -58,8 +58,8 @@ export function validGoogleEndpoint(value) {
   } catch { return false; }
 }
 
-export function collectionOpen(study) {
-  return study.collection.accepting_responses === true && validGoogleEndpoint(study.collection.endpoint);
+export function collectionOpen(study, pairId) {
+  return study.collection.accepting_responses === true && validGoogleEndpoint(study.collection.endpoint) && !(study.collection.pending_pair_ids || []).includes(pairId);
 }
 
 export async function sha256(value) {
